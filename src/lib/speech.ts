@@ -15,17 +15,31 @@ function pickFrenchVoice(): SpeechSynthesisVoice | undefined {
   return window.speechSynthesis.getVoices().find((v) => v.lang.toLowerCase().startsWith('fr'))
 }
 
-/** Fait lire un texte à voix haute (mis en file après tout texte déjà en cours). Ne fait rien si désactivé. */
-export function speak(text: string): void {
-  if (!isSpeechEnabled() || !('speechSynthesis' in window) || !text) return
-  try {
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'fr-FR'
-    const voice = pickFrenchVoice()
-    if (voice) utterance.voice = voice
-    window.speechSynthesis.speak(utterance)
-  } catch {
-    // Synthèse vocale indisponible sur ce navigateur : on l'ignore simplement.
+/** Lit un texte à voix haute ; se résout une fois la lecture terminée (immédiatement si désactivé/indisponible). */
+export function speak(text: string): Promise<void> {
+  return new Promise((resolve) => {
+    if (!isSpeechEnabled() || !('speechSynthesis' in window) || !text) {
+      resolve()
+      return
+    }
+    try {
+      const utterance = new SpeechSynthesisUtterance(text)
+      utterance.lang = 'fr-FR'
+      const voice = pickFrenchVoice()
+      if (voice) utterance.voice = voice
+      utterance.onend = () => resolve()
+      utterance.onerror = () => resolve()
+      window.speechSynthesis.speak(utterance)
+    } catch {
+      resolve()
+    }
+  })
+}
+
+/** Lit plusieurs textes l'un après l'autre ; se résout quand le dernier est terminé. */
+export async function speakSequence(texts: string[]): Promise<void> {
+  for (const text of texts) {
+    await speak(text)
   }
 }
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { AnsweredQuestion } from '../lib/quiz'
 import { playCorrect, playIncorrect } from '../lib/sounds'
-import { isSpeechEnabled, setSpeechEnabled, speak, stopSpeaking } from '../lib/speech'
+import { isSpeechEnabled, setSpeechEnabled, speak, speakSequence, stopSpeaking } from '../lib/speech'
 import type { Question } from '../types'
 
 type Props = {
@@ -28,11 +28,13 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
   const [selected, setSelected] = useState<'A' | 'B' | 'C' | 'D' | null>(null)
   const [results, setResults] = useState<AnsweredQuestion[]>([])
   const [voiceOn, setVoiceOn] = useState(isSpeechEnabled)
+  const [speaking, setSpeaking] = useState(false) // vrai pendant l'appréciation + la lecture du commentaire
 
   const current = questions[index]
   const isLast = index === questions.length - 1
 
   useEffect(() => {
+    setSpeaking(false)
     stopSpeaking()
     speak(current.question)
     return stopSpeaking
@@ -51,8 +53,10 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
     const isCorrect = option === current.correct_answer
     ;(isCorrect ? playCorrect : playIncorrect)()
     stopSpeaking()
-    speak(isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.')
-    speak(current.explanation)
+    setSpeaking(true)
+    speakSequence([isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.', current.explanation]).then(() =>
+      setSpeaking(false),
+    )
   }
 
   function handleNext() {
@@ -157,14 +161,20 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
         </div>
       )}
 
-      <button
-        type="button"
-        onClick={handleNext}
-        disabled={!selected || completing}
-        className="w-full rounded-xl bg-blue-600 py-3.5 text-base font-medium text-white shadow-sm disabled:opacity-50"
-      >
-        {completing ? 'Enregistrement…' : isLast ? completeLabel : 'Question suivante'}
-      </button>
+      <div className="flex flex-col items-center gap-1.5">
+        <button
+          type="button"
+          onClick={handleNext}
+          disabled={!selected || speaking || completing}
+          aria-label={isLast ? completeLabel : 'Question suivante'}
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-2xl text-white shadow-sm transition-opacity disabled:opacity-30"
+        >
+          {completing ? '…' : isLast ? '🏁' : '▶️'}
+        </button>
+        <p className="text-xs text-gray-400">
+          {completing ? 'Enregistrement…' : speaking ? 'Écoutez…' : isLast ? completeLabel : 'Question suivante'}
+        </p>
+      </div>
     </div>
   )
 }
