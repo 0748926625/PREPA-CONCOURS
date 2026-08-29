@@ -11,18 +11,19 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icon.svg'],
+      includeAssets: ['favicon.png'],
       manifest: {
-        name: 'Prepa Concours - Révision QCM',
-        short_name: 'Prepa Concours',
+        name: 'Prépa Fonction Publique Côte d\'Ivoire',
+        short_name: 'Prépa Concours',
         description: 'Révision intelligente par QCM générés à partir de vos ressources',
-        theme_color: '#2563eb',
+        theme_color: '#0a5c36',
         background_color: '#ffffff',
         display: 'standalone',
         start_url: '/PREPA-CONCOURS/',
         scope: '/PREPA-CONCOURS/',
         icons: [
-          { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' },
+          { src: 'icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any maskable' },
+          { src: 'icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
         ],
       },
       workbox: {

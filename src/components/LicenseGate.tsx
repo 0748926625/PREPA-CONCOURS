@@ -3,7 +3,9 @@ import {
   CONTACT_PHONE_DISPLAY,
   CONTACT_PHONE_TEL_URL,
   CONTACT_WHATSAPP_URL,
+  addTrialUsedMs,
   checkLicense,
+  formatCountdown,
   getStoredLicenseKey,
   getTrialRemainingMs,
   isLicenseConfigured,
@@ -11,8 +13,11 @@ import {
 
 type Status = 'checking' | 'trial' | 'locked' | 'unlocked'
 
+const TICK_MS = 1000
+
 export default function LicenseGate({ children }: { children: ReactNode }) {
   const [status, setStatus] = useState<Status>('checking')
+  const [remainingMs, setRemainingMs] = useState(0)
   const [input, setInput] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
@@ -36,10 +41,22 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
       setStatus('locked')
       return
     }
+    setRemainingMs(remaining)
     setStatus('trial')
-    const timer = setTimeout(() => setStatus('locked'), remaining)
-    return () => clearTimeout(timer)
   }, [])
+
+  // Ne décompte que pendant que l'onglet est réellement visible : "minutes effectives".
+  useEffect(() => {
+    if (status !== 'trial') return
+    const interval = setInterval(() => {
+      if (document.visibilityState !== 'visible') return
+      addTrialUsedMs(TICK_MS)
+      const remaining = getTrialRemainingMs()
+      setRemainingMs(remaining)
+      if (remaining <= 0) setStatus('locked')
+    }, TICK_MS)
+    return () => clearInterval(interval)
+  }, [status])
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -105,6 +122,17 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
           </form>
         </div>
       </div>
+    )
+  }
+
+  if (status === 'trial') {
+    return (
+      <>
+        <div className="sticky top-0 z-50 bg-amber-500 px-4 py-1.5 text-center text-xs font-medium text-white">
+          Essai gratuit — {formatCountdown(remainingMs)} restantes
+        </div>
+        {children}
+      </>
     )
   }
 

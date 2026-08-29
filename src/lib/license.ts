@@ -1,6 +1,6 @@
 const DEVICE_ID_KEY = 'prepa-concours:device-id'
 const LICENSE_KEY_KEY = 'prepa-concours:license-key'
-const TRIAL_START_KEY = 'prepa-concours:trial-start'
+const TRIAL_USED_MS_KEY = 'prepa-concours:trial-used-ms'
 
 export const TRIAL_DURATION_MS = 7 * 60 * 1000
 export const CONTACT_PHONE_DISPLAY = '+225 07 48 92 66 25'
@@ -65,16 +65,26 @@ export function isLicenseConfigured(): boolean {
   return !!supabaseUrl && !!supabaseAnonKey
 }
 
-/** Horodatage (ms) du tout premier lancement de l'app sur cet appareil — l'initialise s'il n'existe pas encore. */
-export function getTrialStart(): number {
-  const stored = localStorage.getItem(TRIAL_START_KEY)
-  if (stored) return Number(stored)
-  const now = Date.now()
-  localStorage.setItem(TRIAL_START_KEY, String(now))
-  return now
+/** Temps d'essai déjà consommé (ms) — uniquement pendant que l'app était réellement active/visible. */
+export function getTrialUsedMs(): number {
+  return Number(localStorage.getItem(TRIAL_USED_MS_KEY) ?? '0')
 }
 
-/** Temps d'essai restant en ms (0 si épuisé). Compte depuis le premier lancement, pas le temps d'usage actif. */
+/** Ajoute du temps d'usage effectif au compteur d'essai et retourne le total mis à jour. */
+export function addTrialUsedMs(ms: number): number {
+  const updated = getTrialUsedMs() + ms
+  localStorage.setItem(TRIAL_USED_MS_KEY, String(updated))
+  return updated
+}
+
+/** Temps d'essai restant en ms (0 si épuisé), basé sur l'usage effectif, pas l'horloge murale. */
 export function getTrialRemainingMs(): number {
-  return Math.max(0, getTrialStart() + TRIAL_DURATION_MS - Date.now())
+  return Math.max(0, TRIAL_DURATION_MS - getTrialUsedMs())
+}
+
+export function formatCountdown(ms: number): string {
+  const totalSeconds = Math.max(0, Math.ceil(ms / 1000))
+  const minutes = Math.floor(totalSeconds / 60)
+  const seconds = totalSeconds % 60
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
