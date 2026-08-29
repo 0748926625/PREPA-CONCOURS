@@ -16,6 +16,10 @@ dist-ssr
 # Working reference material (spec, sample documents) — not app source
 /_docs/
 
+# Secrets accidentally dropped at the project root
+clé api gemini.txt
+*.key.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
