@@ -16,6 +16,7 @@ export default defineConfig({
         name: 'Prépa Fonction Publique Côte d\'Ivoire',
         short_name: 'Prépa Concours',
         description: 'Révision intelligente par QCM générés à partir de vos ressources',
+        lang: 'fr',
         theme_color: '#0a5c36',
         background_color: '#ffffff',
         display: 'standalone',
