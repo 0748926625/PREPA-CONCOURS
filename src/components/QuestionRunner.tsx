@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { AnsweredQuestion } from '../lib/quiz'
-import { playClick } from '../lib/sounds'
+import { playCorrect, playIncorrect } from '../lib/sounds'
 import type { Question } from '../types'
 
 type Props = {
@@ -10,16 +10,17 @@ type Props = {
   completeLabel?: string
 }
 
-const OPTION_STYLE: Record<'A' | 'B' | 'C' | 'D', { idle: string; selected: string; badge: string }> = {
-  A: { idle: 'border-blue-200 bg-blue-50/60 text-gray-800', selected: 'border-blue-600 bg-blue-100 text-blue-900', badge: 'bg-blue-600' },
-  B: { idle: 'border-violet-200 bg-violet-50/60 text-gray-800', selected: 'border-violet-600 bg-violet-100 text-violet-900', badge: 'bg-violet-600' },
-  C: { idle: 'border-teal-200 bg-teal-50/60 text-gray-800', selected: 'border-teal-600 bg-teal-100 text-teal-900', badge: 'bg-teal-600' },
-  D: { idle: 'border-amber-200 bg-amber-50/60 text-gray-800', selected: 'border-amber-600 bg-amber-100 text-amber-900', badge: 'bg-amber-600' },
+const OPTION_IDLE: Record<'A' | 'B' | 'C' | 'D', { border: string; badge: string }> = {
+  A: { border: 'border-blue-200 bg-blue-50/60 text-gray-800', badge: 'bg-blue-600' },
+  B: { border: 'border-violet-200 bg-violet-50/60 text-gray-800', badge: 'bg-violet-600' },
+  C: { border: 'border-teal-200 bg-teal-50/60 text-gray-800', badge: 'bg-teal-600' },
+  D: { border: 'border-amber-200 bg-amber-50/60 text-gray-800', badge: 'bg-amber-600' },
 }
 
 /**
  * Fait défiler une série de questions une par une avec des boutons de choix (§14).
- * Pas de correction pendant le parcours : le résultat détaillé s'affiche à la fin (§3/§15).
+ * Correction immédiate à chaque réponse (visuelle + sonore), et le résultat détaillé
+ * complet reste consultable à la fin (§15).
  */
 export default function QuestionRunner({ questions, onComplete, completing = false, completeLabel = 'Voir mes résultats' }: Props) {
   const [index, setIndex] = useState(0)
@@ -30,8 +31,9 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
   const isLast = index === questions.length - 1
 
   function handleSelect(option: 'A' | 'B' | 'C' | 'D') {
+    if (selected) return
     setSelected(option)
-    playClick()
+    ;(option === current.correct_answer ? playCorrect : playIncorrect)()
   }
 
   function handleNext() {
@@ -76,27 +78,52 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
 
       <div className="space-y-3">
         {options.map((opt) => {
-          const style = OPTION_STYLE[opt.key]
+          const isCorrectOption = opt.key === current.correct_answer
           const isSelected = opt.key === selected
+          const idle = OPTION_IDLE[opt.key]
+
+          let border = idle.border
+          let badge = idle.badge
+          if (selected) {
+            if (isCorrectOption) {
+              border = 'border-green-600 bg-green-100 text-green-900'
+              badge = 'bg-green-600'
+            } else if (isSelected) {
+              border = 'border-red-600 bg-red-100 text-red-900'
+              badge = 'bg-red-600'
+            } else {
+              border = 'border-gray-200 bg-white text-gray-400'
+              badge = 'bg-gray-300'
+            }
+          }
+
           return (
             <button
               key={opt.key}
               type="button"
+              disabled={!!selected}
               onClick={() => handleSelect(opt.key)}
-              className={`flex w-full items-center gap-3 rounded-xl border-2 px-4 py-4 text-left text-base transition-colors ${
-                isSelected ? style.selected : style.idle
-              }`}
+              className={`flex w-full items-center gap-3 rounded-xl border-2 px-4 py-4 text-left text-base transition-colors ${border}`}
             >
               <span
-                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white ${style.badge}`}
+                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white ${badge}`}
               >
-                {opt.key}
+                {selected ? (isCorrectOption ? '✓' : isSelected ? '✗' : opt.key) : opt.key}
               </span>
               <span>{opt.text}</span>
             </button>
           )
         })}
       </div>
+
+      {selected && (
+        <div className="rounded-2xl bg-gray-50 p-4">
+          <p className={`text-base font-semibold ${selected === current.correct_answer ? 'text-green-700' : 'text-red-700'}`}>
+            {selected === current.correct_answer ? '✓ Bonne réponse' : '✗ Mauvaise réponse'}
+          </p>
+          <p className="mt-1 text-sm text-gray-700">{current.explanation}</p>
+        </div>
+      )}
 
       <button
         type="button"

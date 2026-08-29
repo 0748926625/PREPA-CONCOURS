@@ -34,6 +34,18 @@ export function playClick() {
   tone(700, 0, 0.06, 0.08)
 }
 
+/** Réponse correcte : ding franc et net. */
+export function playCorrect() {
+  tone(880, 0, 0.1, 0.12)
+  tone(1175, 0.08, 0.18, 0.1)
+}
+
+/** Réponse incorrecte : tonalité basse et courte, pas agressive. */
+export function playIncorrect() {
+  tone(220, 0, 0.14, 0.12)
+  tone(185, 0.1, 0.18, 0.1)
+}
+
 /** Petit carillon ascendant pour une bonne performance. */
 export function playSuccess() {
   tone(523, 0, 0.12) // do
