@@ -4,7 +4,7 @@ const NAV_ITEMS = [
   { to: '/dashboard', label: 'Accueil', icon: '🏠' },
   { to: '/resources', label: 'Ressources', icon: '📚' },
   { to: '/weaknesses', label: 'Lacunes', icon: '🎯' },
-  { to: '/profile', label: 'Profil', icon: '👤' },
+  { to: '/profile', label: 'Réglages', icon: '⚙️' },
 ]
 
 export default function Layout() {

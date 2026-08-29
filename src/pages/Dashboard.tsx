@@ -1,21 +1,50 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { db } from '../lib/db'
+import { masteryStatusFromScore } from '../types'
 
 const ACTIONS = [
   { to: '/resources', label: 'Commencer à réviser', primary: true },
   { to: '/resources', label: 'Mes ressources' },
-  { to: '/profile', label: 'Mes résultats' },
   { to: '/weaknesses', label: 'Mes lacunes' },
 ]
 
+type Stats = {
+  resources: number
+  quizzesDone: number
+  averageScore: number | null
+  gapsCount: number
+}
+
 export default function Dashboard() {
-  // TODO(phase 2+): remplacer par des données réelles issues de Supabase
-  // (resources, quiz_sessions, mastery) une fois les tables créées.
-  const stats = {
+  const [stats, setStats] = useState<Stats>({
     resources: 0,
     quizzesDone: 0,
-    averageScore: null as number | null,
+    averageScore: null,
     gapsCount: 0,
-  }
+  })
+
+  useEffect(() => {
+    async function load() {
+      const [resources, sessions, masteries] = await Promise.all([
+        db.resources.count(),
+        db.quizSessions.toArray(),
+        db.mastery.toArray(),
+      ])
+
+      const averageScore =
+        sessions.length === 0
+          ? null
+          : Math.round(
+              (sessions.reduce((sum, s) => sum + s.score / s.total_questions, 0) / sessions.length) * 100,
+            )
+
+      const gapsCount = masteries.filter((m) => masteryStatusFromScore(m.mastery_score) === 'a_revoir').length
+
+      setStats({ resources, quizzesDone: sessions.length, averageScore, gapsCount })
+    }
+    load()
+  }, [])
 
   return (
     <div className="space-y-6">

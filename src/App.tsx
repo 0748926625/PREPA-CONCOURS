@@ -1,8 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { useAuth } from './lib/AuthContext'
-import ProtectedRoute from './components/ProtectedRoute'
 import Layout from './components/Layout'
-import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Resources from './pages/Resources'
 import ResourceDetail from './pages/ResourceDetail'
@@ -12,25 +9,11 @@ import Weaknesses from './pages/Weaknesses'
 import Remediation from './pages/Remediation'
 import Profile from './pages/Profile'
 
-function Home() {
-  const { user, loading } = useAuth()
-  if (loading) return null
-  return <Navigate to={user ? '/dashboard' : '/login'} replace />
-}
-
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-
-      <Route
-        element={
-          <ProtectedRoute>
-            <Layout />
-          </ProtectedRoute>
-        }
-      >
+      <Route element={<Layout />}>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/resources/:id" element={<ResourceDetail />} />

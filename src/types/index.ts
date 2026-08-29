@@ -14,13 +14,13 @@ export function masteryStatusFromScore(score: number): MasteryStatus {
   return 'a_revoir'
 }
 
+// Toutes les données vivent en local (IndexedDB) — application mono-utilisateur, sans compte.
+
 export type Resource = {
   id: string
-  user_id: string
   title: string
   category: string | null
-  file_url: string | null
-  extracted_text: string | null
+  extracted_text: string
   created_at: string
 }
 
@@ -48,16 +48,22 @@ export type Question = {
 
 export type QuizSession = {
   id: string
-  user_id: string
   resource_id: string
   score: number
   total_questions: number
   created_at: string
 }
 
+export type Answer = {
+  id: string
+  session_id: string
+  question_id: string
+  selected_answer: 'A' | 'B' | 'C' | 'D'
+  is_correct: boolean
+}
+
 export type Mastery = {
   id: string
-  user_id: string
   topic_id: string
   attempts: number
   correct_answers: number
