@@ -84,6 +84,7 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
 
           <div className="mb-6 rounded-xl bg-white p-4 text-center shadow-sm">
             <p className="text-sm text-gray-700">Veuillez contacter l'administrateur du site pour obtenir une clé.</p>
+            <p className="mt-1 text-2xl font-bold text-green-700">1000 FCFA</p>
             <p className="mt-2 text-lg font-semibold text-gray-900">{CONTACT_PHONE_DISPLAY}</p>
             <div className="mt-3 flex gap-2">
               <a
