@@ -1,20 +1,14 @@
-import { createClient } from '@supabase/supabase-js'
-
 const DEVICE_ID_KEY = 'prepa-concours:device-id'
 const LICENSE_KEY_KEY = 'prepa-concours:license-key'
 const TRIAL_START_KEY = 'prepa-concours:trial-start'
 
 export const TRIAL_DURATION_MS = 7 * 60 * 1000
-export const CONTACT_PHONE = '0748926625'
-export const CONTACT_PHONE_DISPLAY = '07 48 92 66 25'
+export const CONTACT_PHONE_DISPLAY = '+225 07 48 92 66 25'
+export const CONTACT_PHONE_TEL_URL = 'tel:+2250748926625'
 export const CONTACT_WHATSAPP_URL = 'https://wa.me/225748926625'
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
-
-// Client Supabase utilisé UNIQUEMENT pour vérifier/activer une clé de licence
-// (RPC activate_license) — aucune autre donnée de l'app ne transite par ici.
-const supabase = supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null
 
 export function getDeviceId(): string {
   let id = localStorage.getItem(DEVICE_ID_KEY)
@@ -35,28 +29,40 @@ function storeLicenseKey(key: string): void {
 
 export type LicenseCheckResult = 'valid' | 'invalid' | 'error'
 
-/** Vérifie une clé auprès de Supabase et l'active sur cet appareil si c'est sa première utilisation. */
+/**
+ * Vérifie une clé auprès de Supabase (RPC activate_license, appelée directement en REST — inutile
+ * d'embarquer tout le SDK @supabase/supabase-js pour un seul appel) et l'active sur cet appareil
+ * si c'est sa première utilisation.
+ */
 export async function checkLicense(key: string): Promise<LicenseCheckResult> {
-  if (!supabase) return 'error' // licence non configurée (pas d'URL/clé Supabase) : on ne bloque pas l'app
+  if (!supabaseUrl || !supabaseAnonKey) return 'error' // licence non configurée : on ne bloque pas l'app
 
   const trimmed = key.trim()
   if (!trimmed) return 'invalid'
 
-  const { data, error } = await supabase.rpc('activate_license', {
-    license_key: trimmed,
-    device: getDeviceId(),
-  })
-
-  if (error) return 'error'
-  if (data === true) {
-    storeLicenseKey(trimmed)
-    return 'valid'
+  try {
+    const res = await fetch(`${supabaseUrl}/rest/v1/rpc/activate_license`, {
+      method: 'POST',
+      headers: {
+        apikey: supabaseAnonKey,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ license_key: trimmed, device: getDeviceId() }),
+    })
+    if (!res.ok) return 'error'
+    const data = await res.json()
+    if (data === true) {
+      storeLicenseKey(trimmed)
+      return 'valid'
+    }
+    return 'invalid'
+  } catch {
+    return 'error'
   }
-  return 'invalid'
 }
 
 export function isLicenseConfigured(): boolean {
-  return supabase !== null
+  return !!supabaseUrl && !!supabaseAnonKey
 }
 
 /** Horodatage (ms) du tout premier lancement de l'app sur cet appareil — l'initialise s'il n'existe pas encore. */

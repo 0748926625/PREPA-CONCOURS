@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import {
   CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL_URL,
   CONTACT_WHATSAPP_URL,
   checkLicense,
   getStoredLicenseKey,
@@ -65,17 +66,24 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
           <p className="mb-6 text-center text-sm text-gray-500">Votre période d'essai est terminée.</p>
 
           <div className="mb-6 rounded-xl bg-white p-4 text-center shadow-sm">
-            <p className="text-sm text-gray-700">Pour continuer à utiliser l'application, contactez-nous :</p>
-            <p className="mt-2 text-lg font-semibold text-gray-900">📞 {CONTACT_PHONE_DISPLAY}</p>
-            <p className="text-xs text-gray-500">Côte d'Ivoire</p>
-            <a
-              href={CONTACT_WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white"
-            >
-              💬 Contacter sur WhatsApp
-            </a>
+            <p className="text-sm text-gray-700">Veuillez contacter l'administrateur du site pour obtenir une clé.</p>
+            <p className="mt-2 text-lg font-semibold text-gray-900">{CONTACT_PHONE_DISPLAY}</p>
+            <div className="mt-3 flex gap-2">
+              <a
+                href={CONTACT_PHONE_TEL_URL}
+                className="flex-1 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white"
+              >
+                📞 Appeler
+              </a>
+              <a
+                href={CONTACT_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white"
+              >
+                💬 WhatsApp
+              </a>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-3">
