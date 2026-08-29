@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { AnsweredQuestion } from '../lib/quiz'
 import { playCorrect, playIncorrect } from '../lib/sounds'
+import { isSpeechEnabled, setSpeechEnabled, speak, stopSpeaking } from '../lib/speech'
 import type { Question } from '../types'
 
 type Props = {
@@ -26,14 +27,32 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<'A' | 'B' | 'C' | 'D' | null>(null)
   const [results, setResults] = useState<AnsweredQuestion[]>([])
+  const [voiceOn, setVoiceOn] = useState(isSpeechEnabled)
 
   const current = questions[index]
   const isLast = index === questions.length - 1
 
+  useEffect(() => {
+    stopSpeaking()
+    speak(current.question)
+    return stopSpeaking
+  }, [current.id])
+
+  function toggleVoice() {
+    const next = !voiceOn
+    setVoiceOn(next)
+    setSpeechEnabled(next)
+    if (!next) stopSpeaking()
+  }
+
   function handleSelect(option: 'A' | 'B' | 'C' | 'D') {
     if (selected) return
     setSelected(option)
-    ;(option === current.correct_answer ? playCorrect : playIncorrect)()
+    const isCorrect = option === current.correct_answer
+    ;(isCorrect ? playCorrect : playIncorrect)()
+    stopSpeaking()
+    speak(isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.')
+    speak(current.explanation)
   }
 
   function handleNext() {
@@ -61,9 +80,19 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
   return (
     <div className="flex min-h-[calc(100svh-11rem)] flex-col justify-center gap-6">
       <div>
-        <p className="text-sm font-medium text-gray-500">
-          Question {index + 1} / {questions.length}
-        </p>
+        <div className="flex items-center justify-between">
+          <p className="text-sm font-medium text-gray-500">
+            Question {index + 1} / {questions.length}
+          </p>
+          <button
+            type="button"
+            onClick={toggleVoice}
+            aria-label={voiceOn ? 'Couper la lecture vocale' : 'Activer la lecture vocale'}
+            className="text-lg"
+          >
+            {voiceOn ? '🔊' : '🔇'}
+          </button>
+        </div>
         <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-gray-200">
           <div
             className="h-full rounded-full bg-gradient-to-r from-blue-500 via-violet-500 to-teal-500 transition-all"
