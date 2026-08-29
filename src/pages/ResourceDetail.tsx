@@ -182,11 +182,30 @@ export default function ResourceDetail() {
         {generateError && <p className="mt-2 text-sm text-red-600">{generateError}</p>}
 
         {questions.length > 0 && (
-          <ul className="mt-3 space-y-2">
+          <ul className="mt-3 space-y-3">
             {questions.map((q) => (
               <li key={q.id} className="rounded-lg bg-gray-50 p-2.5">
                 <p className="text-sm text-gray-800">{q.question}</p>
-                <p className="mt-1 text-xs text-gray-500">{DIFFICULTY_LABEL[q.difficulty]}</p>
+                <ul className="mt-1.5 space-y-0.5">
+                  {(
+                    [
+                      ['A', q.option_a],
+                      ['B', q.option_b],
+                      ['C', q.option_c],
+                      ['D', q.option_d],
+                    ] as const
+                  )
+                    .filter(([, text]) => !!text)
+                    .map(([key, text]) => (
+                      <li
+                        key={key}
+                        className={`text-xs ${key === q.correct_answer ? 'font-medium text-green-700' : 'text-gray-500'}`}
+                      >
+                        {key === q.correct_answer ? '✓' : '·'} {key}. {text}
+                      </li>
+                    ))}
+                </ul>
+                <p className="mt-1.5 text-xs text-gray-400">{DIFFICULTY_LABEL[q.difficulty]}</p>
               </li>
             ))}
           </ul>
