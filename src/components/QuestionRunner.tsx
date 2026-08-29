@@ -84,13 +84,16 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
 
           let border = idle.border
           let badge = idle.badge
+          let anim = ''
           if (selected) {
             if (isCorrectOption) {
               border = 'border-green-600 bg-green-100 text-green-900'
               badge = 'bg-green-600'
+              anim = 'anim-pop-correct'
             } else if (isSelected) {
               border = 'border-red-600 bg-red-100 text-red-900'
               badge = 'bg-red-600'
+              anim = 'anim-shake-incorrect'
             } else {
               border = 'border-gray-200 bg-white text-gray-400'
               badge = 'bg-gray-300'
@@ -103,7 +106,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
               type="button"
               disabled={!!selected}
               onClick={() => handleSelect(opt.key)}
-              className={`flex w-full items-center gap-3 rounded-xl border-2 px-4 py-4 text-left text-base transition-colors ${border}`}
+              className={`flex w-full items-center gap-3 rounded-xl border-2 px-4 py-4 text-left text-base transition-colors ${border} ${anim}`}
             >
               <span
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white ${badge}`}
