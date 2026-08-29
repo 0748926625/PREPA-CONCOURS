@@ -2,6 +2,12 @@ import { createClient } from '@supabase/supabase-js'
 
 const DEVICE_ID_KEY = 'prepa-concours:device-id'
 const LICENSE_KEY_KEY = 'prepa-concours:license-key'
+const TRIAL_START_KEY = 'prepa-concours:trial-start'
+
+export const TRIAL_DURATION_MS = 7 * 60 * 1000
+export const CONTACT_PHONE = '0748926625'
+export const CONTACT_PHONE_DISPLAY = '07 48 92 66 25'
+export const CONTACT_WHATSAPP_URL = 'https://wa.me/225748926625'
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
@@ -51,4 +57,18 @@ export async function checkLicense(key: string): Promise<LicenseCheckResult> {
 
 export function isLicenseConfigured(): boolean {
   return supabase !== null
+}
+
+/** Horodatage (ms) du tout premier lancement de l'app sur cet appareil — l'initialise s'il n'existe pas encore. */
+export function getTrialStart(): number {
+  const stored = localStorage.getItem(TRIAL_START_KEY)
+  if (stored) return Number(stored)
+  const now = Date.now()
+  localStorage.setItem(TRIAL_START_KEY, String(now))
+  return now
+}
+
+/** Temps d'essai restant en ms (0 si épuisé). Compte depuis le premier lancement, pas le temps d'usage actif. */
+export function getTrialRemainingMs(): number {
+  return Math.max(0, getTrialStart() + TRIAL_DURATION_MS - Date.now())
 }

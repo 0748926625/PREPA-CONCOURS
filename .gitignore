@@ -16,10 +16,8 @@ dist-ssr
 # Working reference material (spec, sample documents) — not app source
 /_docs/
 
-# Secrets accidentally dropped at the project root — any "clé...txt" variant, at root or in _docs/
-*cl[ée]*.txt
-*.key.txt
-*api*key*.txt
+# Secrets/notes dropped at the project root (naming varies each time — block all root .txt files)
+/*.txt
 
 # Editor directories and files
 .vscode/*

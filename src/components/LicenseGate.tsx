@@ -1,7 +1,14 @@
 import { useEffect, useState, type ReactNode } from 'react'
-import { checkLicense, getStoredLicenseKey, isLicenseConfigured } from '../lib/license'
+import {
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_WHATSAPP_URL,
+  checkLicense,
+  getStoredLicenseKey,
+  getTrialRemainingMs,
+  isLicenseConfigured,
+} from '../lib/license'
 
-type Status = 'checking' | 'locked' | 'unlocked'
+type Status = 'checking' | 'trial' | 'locked' | 'unlocked'
 
 export default function LicenseGate({ children }: { children: ReactNode }) {
   const [status, setStatus] = useState<Status>('checking')
@@ -14,14 +21,23 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
       setStatus('unlocked')
       return
     }
+
     const stored = getStoredLicenseKey()
-    if (!stored) {
+    if (stored) {
+      checkLicense(stored).then((result) => {
+        setStatus(result === 'valid' ? 'unlocked' : 'locked')
+      })
+      return
+    }
+
+    const remaining = getTrialRemainingMs()
+    if (remaining <= 0) {
       setStatus('locked')
       return
     }
-    checkLicense(stored).then((result) => {
-      setStatus(result === 'valid' ? 'unlocked' : 'locked')
-    })
+    setStatus('trial')
+    const timer = setTimeout(() => setStatus('locked'), remaining)
+    return () => clearTimeout(timer)
   }, [])
 
   async function handleSubmit(e: React.FormEvent) {
@@ -33,7 +49,7 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
     if (result === 'valid') {
       setStatus('unlocked')
     } else if (result === 'invalid') {
-      setError('Clé invalide, déjà utilisée sur un autre appareil, ou déjà attribuée ailleurs.')
+      setError('Clé invalide, ou déjà utilisée sur un autre appareil.')
     } else {
       setError('Impossible de vérifier la clé pour le moment. Réessayez plus tard.')
     }
@@ -46,9 +62,24 @@ export default function LicenseGate({ children }: { children: ReactNode }) {
       <div className="flex min-h-svh flex-col items-center justify-center bg-gray-50 px-6">
         <div className="w-full max-w-sm">
           <h1 className="mb-1 text-center text-2xl font-semibold text-gray-900">Prépa Concours</h1>
-          <p className="mb-8 text-center text-sm text-gray-500">Entrez votre clé d'activation pour continuer.</p>
+          <p className="mb-6 text-center text-sm text-gray-500">Votre période d'essai est terminée.</p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="mb-6 rounded-xl bg-white p-4 text-center shadow-sm">
+            <p className="text-sm text-gray-700">Pour continuer à utiliser l'application, contactez-nous :</p>
+            <p className="mt-2 text-lg font-semibold text-gray-900">📞 {CONTACT_PHONE_DISPLAY}</p>
+            <p className="text-xs text-gray-500">Côte d'Ivoire</p>
+            <a
+              href={CONTACT_WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white"
+            >
+              💬 Contacter sur WhatsApp
+            </a>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-3">
+            <p className="text-center text-xs text-gray-500">Vous avez déjà une clé d'activation ?</p>
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
