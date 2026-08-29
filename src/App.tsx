@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import Resources from './pages/Resources'
+import AddResource from './pages/AddResource'
 import ResourceDetail from './pages/ResourceDetail'
 import Quiz from './pages/Quiz'
 import Results from './pages/Results'
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/resources/new" element={<AddResource />} />
         <Route path="/resources/:id" element={<ResourceDetail />} />
         <Route path="/quiz/:id" element={<Quiz />} />
         <Route path="/results/:id" element={<Results />} />
