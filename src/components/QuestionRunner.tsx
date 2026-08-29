@@ -21,20 +21,21 @@ const OPTION_IDLE: Record<'A' | 'B' | 'C' | 'D', { border: string; badge: string
 /**
  * Fait défiler une série de questions une par une avec des boutons de choix (§14).
  * Correction immédiate à chaque réponse (visuelle + sonore), et le résultat détaillé
- * complet reste consultable à la fin (§15).
+ * complet reste consultable à la fin (§15). Un mode "lecture automatique" (en haut)
+ * enchaîne seul les questions une fois l'audio terminé ; le bouton "Question suivante"
+ * (en bas) reste le défilement manuel habituel, disponible dès qu'une réponse est choisie.
  */
 export default function QuestionRunner({ questions, onComplete, completing = false, completeLabel = 'Voir mes résultats' }: Props) {
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<'A' | 'B' | 'C' | 'D' | null>(null)
   const [results, setResults] = useState<AnsweredQuestion[]>([])
   const [voiceOn, setVoiceOn] = useState(isSpeechEnabled)
-  const [speaking, setSpeaking] = useState(false) // vrai pendant l'appréciation + la lecture du commentaire
+  const [autoPlay, setAutoPlay] = useState(false)
 
   const current = questions[index]
   const isLast = index === questions.length - 1
 
   useEffect(() => {
-    setSpeaking(false)
     stopSpeaking()
     speak(current.question)
     return stopSpeaking
@@ -47,24 +48,12 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
     if (!next) stopSpeaking()
   }
 
-  function handleSelect(option: 'A' | 'B' | 'C' | 'D') {
-    if (selected) return
-    setSelected(option)
-    const isCorrect = option === current.correct_answer
-    ;(isCorrect ? playCorrect : playIncorrect)()
-    stopSpeaking()
-    setSpeaking(true)
-    speakSequence([isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.', current.explanation]).then(() =>
-      setSpeaking(false),
-    )
+  function toggleAutoPlay() {
+    setAutoPlay((v) => !v)
   }
 
-  function handleNext() {
-    if (!selected) return
-    const updatedResults = [
-      ...results,
-      { question: current, selected, isCorrect: selected === current.correct_answer },
-    ]
+  function advance(answer: 'A' | 'B' | 'C' | 'D') {
+    const updatedResults = [...results, { question: current, selected: answer, isCorrect: answer === current.correct_answer }]
     if (isLast) {
       onComplete(updatedResults)
       return
@@ -72,6 +61,22 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
     setResults(updatedResults)
     setIndex((i) => i + 1)
     setSelected(null)
+  }
+
+  function handleSelect(option: 'A' | 'B' | 'C' | 'D') {
+    if (selected) return
+    setSelected(option)
+    const isCorrect = option === current.correct_answer
+    ;(isCorrect ? playCorrect : playIncorrect)()
+    stopSpeaking()
+    speakSequence([isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.', current.explanation]).then(() => {
+      if (autoPlay) advance(option)
+    })
+  }
+
+  function handleNext() {
+    if (!selected) return
+    advance(selected)
   }
 
   const options: { key: 'A' | 'B' | 'C' | 'D'; text: string }[] = [
@@ -88,14 +93,25 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
           <p className="text-sm font-medium text-gray-500">
             Question {index + 1} / {questions.length}
           </p>
-          <button
-            type="button"
-            onClick={toggleVoice}
-            aria-label={voiceOn ? 'Couper la lecture vocale' : 'Activer la lecture vocale'}
-            className="text-lg"
-          >
-            {voiceOn ? '🔊' : '🔇'}
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={toggleAutoPlay}
+              aria-label={autoPlay ? 'Désactiver la lecture automatique' : 'Activer la lecture automatique'}
+              title={autoPlay ? 'Lecture automatique activée' : 'Parcourir automatiquement les questions'}
+              className={`text-lg ${autoPlay ? 'opacity-100' : 'opacity-50'}`}
+            >
+              {autoPlay ? '⏸️' : '▶️'}
+            </button>
+            <button
+              type="button"
+              onClick={toggleVoice}
+              aria-label={voiceOn ? 'Couper la lecture vocale' : 'Activer la lecture vocale'}
+              className="text-lg"
+            >
+              {voiceOn ? '🔊' : '🔇'}
+            </button>
+          </div>
         </div>
         <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-gray-200">
           <div
@@ -161,20 +177,14 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
         </div>
       )}
 
-      <div className="flex flex-col items-center gap-1.5">
-        <button
-          type="button"
-          onClick={handleNext}
-          disabled={!selected || speaking || completing}
-          aria-label={isLast ? completeLabel : 'Question suivante'}
-          className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-2xl text-white shadow-sm transition-opacity disabled:opacity-30"
-        >
-          {completing ? '…' : isLast ? '🏁' : '▶️'}
-        </button>
-        <p className="text-xs text-gray-400">
-          {completing ? 'Enregistrement…' : speaking ? 'Écoutez…' : isLast ? completeLabel : 'Question suivante'}
-        </p>
-      </div>
+      <button
+        type="button"
+        onClick={handleNext}
+        disabled={!selected || completing}
+        className="w-full rounded-xl bg-blue-600 py-3.5 text-base font-medium text-white shadow-sm disabled:opacity-50"
+      >
+        {completing ? 'Enregistrement…' : isLast ? completeLabel : 'Question suivante'}
+      </button>
     </div>
   )
 }
