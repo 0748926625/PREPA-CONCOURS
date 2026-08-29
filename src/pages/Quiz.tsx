@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { db } from '../lib/db'
 import { saveQuizSession, type AnsweredQuestion } from '../lib/quiz'
 import QuestionRunner from '../components/QuestionRunner'
-import type { Question, Resource, Topic } from '../types'
+import type { Question, Resource } from '../types'
 
 const QUICK_MODE_SIZE = 10
 
@@ -22,22 +22,13 @@ export default function Quiz() {
 
   const [resource, setResource] = useState<Resource | null | undefined>(undefined)
   const [allQuestions, setAllQuestions] = useState<Question[]>([])
-  const [topicsById, setTopicsById] = useState<Map<string, Topic>>(new Map())
   const [set, setSet] = useState<Question[] | null>(null) // null tant que le mode n'est pas choisi
   const [saving, setSaving] = useState(false)
 
   useEffect(() => {
     if (!resourceId) return
     db.resources.get(resourceId).then((r) => setResource(r ?? null))
-    db.questions
-      .where('resource_id')
-      .equals(resourceId)
-      .toArray()
-      .then(async (qs) => {
-        setAllQuestions(qs)
-        const topics = await db.topics.bulkGet([...new Set(qs.map((q) => q.topic_id))])
-        setTopicsById(new Map(topics.filter((t): t is Topic => !!t).map((t) => [t.id, t])))
-      })
+    db.questions.where('resource_id').equals(resourceId).toArray().then(setAllQuestions)
   }, [resourceId])
 
   function startQuiz(mode: 'quick' | 'complete') {
@@ -94,12 +85,5 @@ export default function Quiz() {
     )
   }
 
-  return (
-    <QuestionRunner
-      questions={set}
-      getTopicName={(topicId) => topicsById.get(topicId)?.name}
-      onComplete={handleComplete}
-      completing={saving}
-    />
-  )
+  return <QuestionRunner questions={set} onComplete={handleComplete} completing={saving} />
 }

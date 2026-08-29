@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getSessionResults, type SessionResults } from '../lib/quiz'
+import { playSoft, playSuccess } from '../lib/sounds'
+import AnswerReview from '../components/AnswerReview'
 
 export default function Results() {
   const { id } = useParams<{ id: string }>()
@@ -8,7 +10,10 @@ export default function Results() {
 
   useEffect(() => {
     if (!id) return
-    getSessionResults(id).then(setResults)
+    getSessionResults(id).then((r) => {
+      setResults(r)
+      if (r) (r.session.score / r.session.total_questions >= 0.7 ? playSuccess : playSoft)()
+    })
   }, [id])
 
   if (results === undefined) return null
@@ -24,7 +29,7 @@ export default function Results() {
     )
   }
 
-  const { session, strengths, weaknesses } = results
+  const { session, strengths, weaknesses, review } = results
   const percent = Math.round((session.score / session.total_questions) * 100)
   const wrong = session.total_questions - session.score
 
@@ -67,6 +72,11 @@ export default function Results() {
           </ul>
         </div>
       )}
+
+      <div>
+        <p className="mb-2 text-sm font-medium text-gray-900">Correction détaillée</p>
+        <AnswerReview results={review} />
+      </div>
 
       {weaknesses.length > 0 ? (
         <Link

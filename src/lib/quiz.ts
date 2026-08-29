@@ -43,26 +43,34 @@ export type SessionResults = {
   session: QuizSession
   strengths: string[] // noms des notions bien réussies dans cette session
   weaknesses: string[] // noms des notions mal réussies dans cette session
+  review: AnsweredQuestion[] // détail question par question, pour la correction en fin de session
 }
 
-/** Récapitulatif d'une session terminée : score + notions fortes/faibles pour CETTE session (§15). */
+/** Récapitulatif d'une session terminée : score + notions fortes/faibles + détail question par question (§15). */
 export async function getSessionResults(sessionId: string): Promise<SessionResults | null> {
   const session = await db.quizSessions.get(sessionId)
   if (!session) return null
 
   const answers = await db.answers.where('session_id').equals(sessionId).toArray()
   const questions = await db.questions.bulkGet(answers.map((a) => a.question_id))
-  const topicIds = [...new Set(questions.filter((q): q is Question => !!q).map((q) => q.topic_id))]
+  const questionById = new Map(questions.filter((q): q is Question => !!q).map((q) => [q.id, q]))
+
+  const review: AnsweredQuestion[] = []
+  for (const answer of answers) {
+    const question = questionById.get(answer.question_id)
+    if (!question) continue
+    review.push({ question, selected: answer.selected_answer, isCorrect: answer.is_correct })
+  }
+
+  const topicIds = [...new Set(review.map((r) => r.question.topic_id))]
   const topics = await db.topics.bulkGet(topicIds)
   const topicNameById = new Map(topics.filter((t) => !!t).map((t) => [t!.id, t!.name]))
 
   const perTopic = new Map<string, { correct: number; total: number }>()
-  for (const answer of answers) {
-    const question = questions.find((q) => q?.id === answer.question_id)
-    if (!question) continue
+  for (const { question, isCorrect } of review) {
     const stat = perTopic.get(question.topic_id) ?? { correct: 0, total: 0 }
     stat.total += 1
-    if (answer.is_correct) stat.correct += 1
+    if (isCorrect) stat.correct += 1
     perTopic.set(question.topic_id, stat)
   }
 
@@ -75,7 +83,7 @@ export async function getSessionResults(sessionId: string): Promise<SessionResul
     else weaknesses.push(name)
   }
 
-  return { session, strengths, weaknesses }
+  return { session, strengths, weaknesses, review }
 }
 
 export type FailedAttempt = {

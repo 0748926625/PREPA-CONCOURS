@@ -6,6 +6,8 @@ import { getRecentFailedAttempts, type AnsweredQuestion } from '../lib/quiz'
 import { getMasteryByTopic, updateMasteryFromAnswers } from '../lib/mastery'
 import { generateRemediationContent, generateVerificationQuestions, type RemediationContent } from '../lib/ai/generateRemediation'
 import QuestionRunner from '../components/QuestionRunner'
+import AnswerReview from '../components/AnswerReview'
+import { playSoft, playSuccess } from '../lib/sounds'
 import { MASTERY_THRESHOLDS, type Mastery, type Question, type Resource, type Topic } from '../types'
 
 type Phase = 'intro' | 'exercises' | 'exercises-done' | 'verifying' | 'verification' | 'done'
@@ -92,6 +94,8 @@ export default function Remediation() {
     await updateMasteryFromAnswers(results.map((r) => ({ topic_id: topic!.id, is_correct: r.isCorrect })))
     setMastery((await getMasteryByTopic(topic!.id)) ?? null)
     setPhase('done')
+    const correct = results.filter((r) => r.isCorrect).length
+    ;(correct / results.length >= 0.7 ? playSuccess : playSoft)()
   }
 
   return (
@@ -147,6 +151,7 @@ export default function Remediation() {
             </p>
             <p className="text-xs text-gray-500">bonnes réponses aux exercices</p>
           </div>
+          <AnswerReview results={exerciseResults} />
           <button
             type="button"
             onClick={handleStartVerification}
@@ -180,6 +185,7 @@ export default function Remediation() {
               </p>
             )}
           </div>
+          <AnswerReview results={verificationResults} />
           <Link
             to="/weaknesses"
             className="block w-full rounded-lg bg-blue-600 py-2.5 text-center text-sm font-medium text-white"

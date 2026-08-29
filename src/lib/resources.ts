@@ -47,3 +47,14 @@ export async function deleteResource(id: string): Promise<void> {
 export function countQuestions(resourceId: string): Promise<number> {
   return db.questions.where('resource_id').equals(resourceId).count()
 }
+
+export type RevisableResource = Resource & { questionCount: number }
+
+/** Ressources ayant déjà des QCM générés, prêtes à réviser immédiatement. */
+export async function listRevisableResources(): Promise<RevisableResource[]> {
+  const resources = await listResources()
+  const withCounts = await Promise.all(
+    resources.map(async (r) => ({ ...r, questionCount: await countQuestions(r.id) })),
+  )
+  return withCounts.filter((r) => r.questionCount > 0)
+}

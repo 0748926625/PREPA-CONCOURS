@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { db } from '../lib/db'
 
 const ACTIONS = [
-  { to: '/resources', label: 'Commencer à réviser', primary: true },
+  { to: '/qcm', label: 'Commencer à réviser', primary: true },
   { to: '/resources', label: 'Mes ressources' },
   { to: '/weaknesses', label: 'Mes lacunes' },
 ]

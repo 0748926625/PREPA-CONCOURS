@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
+import QcmMenu from './pages/QcmMenu'
 import Resources from './pages/Resources'
 import AddResource from './pages/AddResource'
 import ResourceDetail from './pages/ResourceDetail'
@@ -16,6 +17,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/qcm" element={<QcmMenu />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/resources/new" element={<AddResource />} />
         <Route path="/resources/:id" element={<ResourceDetail />} />
