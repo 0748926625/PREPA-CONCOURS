@@ -77,3 +77,41 @@ export async function getSessionResults(sessionId: string): Promise<SessionResul
 
   return { session, strengths, weaknesses }
 }
+
+export type FailedAttempt = {
+  question: string
+  selected_answer: string
+  correct_answer: string
+  explanation: string
+}
+
+/** Dernières réponses ratées sur une notion, pour donner du contexte à la remédiation IA (§19). */
+export async function getRecentFailedAttempts(topicId: string, limit = 5): Promise<FailedAttempt[]> {
+  const topicQuestions = await db.questions.where('topic_id').equals(topicId).toArray()
+  const questionIds = topicQuestions.map((q) => q.id)
+  if (questionIds.length === 0) return []
+
+  const wrongAnswers = await db.answers
+    .where('question_id')
+    .anyOf(questionIds)
+    .and((a) => !a.is_correct)
+    .toArray()
+
+  const sessions = await db.quizSessions.bulkGet([...new Set(wrongAnswers.map((a) => a.session_id))])
+  const sessionCreatedAt = new Map(sessions.filter((s) => !!s).map((s) => [s!.id, s!.created_at]))
+
+  const questionById = new Map(topicQuestions.map((q) => [q.id, q]))
+  return wrongAnswers
+    .slice()
+    .sort((a, b) => (sessionCreatedAt.get(b.session_id) ?? '').localeCompare(sessionCreatedAt.get(a.session_id) ?? ''))
+    .slice(0, limit)
+    .map((a) => {
+      const q = questionById.get(a.question_id)!
+      return {
+        question: q.question,
+        selected_answer: a.selected_answer,
+        correct_answer: q.correct_answer,
+        explanation: q.explanation,
+      }
+    })
+}
