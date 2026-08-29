@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../lib/db'
-import { masteryStatusFromScore } from '../types'
 
 const ACTIONS = [
   { to: '/resources', label: 'Commencer à réviser', primary: true },
@@ -39,7 +38,7 @@ export default function Dashboard() {
               (sessions.reduce((sum, s) => sum + s.score / s.total_questions, 0) / sessions.length) * 100,
             )
 
-      const gapsCount = masteries.filter((m) => masteryStatusFromScore(m.mastery_score) === 'a_revoir').length
+      const gapsCount = masteries.filter((m) => m.status === 'a_revoir').length
 
       setStats({ resources, quizzesDone: sessions.length, averageScore, gapsCount })
     }

@@ -14,6 +14,14 @@ export function masteryStatusFromScore(score: number): MasteryStatus {
   return 'a_revoir'
 }
 
+// Une notion maîtrisée redevient "À revoir" après plusieurs échecs d'affilée (§11).
+export const CONSECUTIVE_FAILURES_THRESHOLD = 3
+
+export function computeMasteryStatus(score: number, consecutiveFailures: number): MasteryStatus {
+  if (consecutiveFailures >= CONSECUTIVE_FAILURES_THRESHOLD) return 'a_revoir'
+  return masteryStatusFromScore(score)
+}
+
 // Toutes les données vivent en local (IndexedDB) — application mono-utilisateur, sans compte.
 
 export type Resource = {
@@ -69,6 +77,7 @@ export type Mastery = {
   correct_answers: number
   wrong_answers: number
   mastery_score: number
+  consecutive_failures: number
   status: MasteryStatus
   updated_at: string
 }

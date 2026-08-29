@@ -170,14 +170,22 @@ export default function ResourceDetail() {
         )}
       </div>
 
-      <button
-        type="button"
-        disabled
-        title="Bientôt disponible (Phase 5)"
-        className="w-full rounded-lg bg-blue-600 py-2.5 text-sm font-medium text-white opacity-50"
-      >
-        {questions.length > 0 ? 'Réviser (bientôt)' : 'Générez des QCM pour pouvoir réviser'}
-      </button>
+      {questions.length > 0 ? (
+        <Link
+          to={`/quiz/${resource.id}`}
+          className="block w-full rounded-lg bg-blue-600 py-2.5 text-center text-sm font-medium text-white"
+        >
+          Réviser
+        </Link>
+      ) : (
+        <button
+          type="button"
+          disabled
+          className="w-full rounded-lg bg-blue-600 py-2.5 text-sm font-medium text-white opacity-50"
+        >
+          Générez des QCM pour pouvoir réviser
+        </button>
+      )}
 
       <button
         type="button"
