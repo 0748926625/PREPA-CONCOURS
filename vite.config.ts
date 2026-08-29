@@ -3,9 +3,9 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { defineConfig } from 'vite'
 
-// Base path matches the GitHub Pages repo name: https://<user>.github.io/prepa-concours/
+// Base path matches the GitHub Pages repo name: https://<user>.github.io/PREPA-CONCOURS/
 export default defineConfig({
-  base: '/prepa-concours/',
+  base: '/PREPA-CONCOURS/',
   plugins: [
     react(),
     tailwindcss(),
@@ -19,8 +19,8 @@ export default defineConfig({
         theme_color: '#2563eb',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/prepa-concours/',
-        scope: '/prepa-concours/',
+        start_url: '/PREPA-CONCOURS/',
+        scope: '/PREPA-CONCOURS/',
         icons: [
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' },
         ],
