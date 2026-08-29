@@ -38,7 +38,7 @@ export default function Dashboard() {
               (sessions.reduce((sum, s) => sum + s.score / s.total_questions, 0) / sessions.length) * 100,
             )
 
-      const gapsCount = masteries.filter((m) => m.status === 'a_revoir').length
+      const gapsCount = masteries.filter((m) => m.status === 'a_revoir' || m.status === 'fragile').length
 
       setStats({ resources, quizzesDone: sessions.length, averageScore, gapsCount })
     }

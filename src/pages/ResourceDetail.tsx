@@ -3,13 +3,21 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { deleteResource, getResource } from '../lib/resources'
 import { analyzeResource, listTopics } from '../lib/ai/analyzeResource'
 import { generateQuestions, listQuestions } from '../lib/ai/generateQuestions'
+import { getMasteryMapForTopics } from '../lib/mastery'
 import { hasAiKey } from '../lib/aiSettings'
-import type { Question, Resource, Topic } from '../types'
+import type { Mastery, MasteryStatus, Question, Resource, Topic } from '../types'
 
 const DIFFICULTY_LABEL: Record<Question['difficulty'], string> = {
   facile: 'Facile',
   moyen: 'Moyen',
   difficile: 'Difficile',
+}
+
+const MASTERY_STYLE: Record<MasteryStatus, { label: string; className: string }> = {
+  maitrise: { label: 'Maîtrisé', className: 'bg-green-50 text-green-700' },
+  en_bonne_voie: { label: 'En bonne voie', className: 'bg-blue-50 text-blue-700' },
+  fragile: { label: 'Fragile', className: 'bg-orange-50 text-orange-700' },
+  a_revoir: { label: 'À revoir', className: 'bg-red-50 text-red-700' },
 }
 
 export default function ResourceDetail() {
@@ -18,6 +26,7 @@ export default function ResourceDetail() {
   const [resource, setResource] = useState<Resource | null | undefined>(undefined)
   const [topics, setTopics] = useState<Topic[]>([])
   const [questions, setQuestions] = useState<Question[]>([])
+  const [masteryByTopic, setMasteryByTopic] = useState<Map<string, Mastery>>(new Map())
   const [analyzing, setAnalyzing] = useState(false)
   const [generating, setGenerating] = useState(false)
   const [analyzeError, setAnalyzeError] = useState<string | null>(null)
@@ -26,7 +35,10 @@ export default function ResourceDetail() {
   useEffect(() => {
     if (!id) return
     getResource(id).then((r) => setResource(r ?? null))
-    listTopics(id).then(setTopics)
+    listTopics(id).then((ts) => {
+      setTopics(ts)
+      if (ts.length > 0) getMasteryMapForTopics(ts.map((t) => t.id)).then(setMasteryByTopic)
+    })
     listQuestions(id).then(setQuestions)
   }, [id])
 
@@ -127,12 +139,23 @@ export default function ResourceDetail() {
 
         {topics.length > 0 && (
           <ul className="mt-3 space-y-2">
-            {topics.map((topic) => (
-              <li key={topic.id} className="rounded-lg bg-gray-50 p-2.5">
-                <p className="text-sm font-medium text-gray-800">{topic.name}</p>
-                <p className="text-xs text-gray-500">{topic.description}</p>
-              </li>
-            ))}
+            {topics.map((topic) => {
+              const mastery = masteryByTopic.get(topic.id)
+              const style = mastery ? MASTERY_STYLE[mastery.status] : null
+              return (
+                <li key={topic.id} className="rounded-lg bg-gray-50 p-2.5">
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="text-sm font-medium text-gray-800">{topic.name}</p>
+                    {style && (
+                      <span className={`whitespace-nowrap rounded-full px-2 py-0.5 text-xs ${style.className}`}>
+                        {style.label} · {mastery!.mastery_score}%
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs text-gray-500">{topic.description}</p>
+                </li>
+              )
+            })}
           </ul>
         )}
       </div>
