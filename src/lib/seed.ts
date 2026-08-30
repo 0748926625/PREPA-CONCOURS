@@ -3,6 +3,7 @@ import { db } from './db'
 const INSTALLED_FLAG_FP = 'prepa-concours:seed-fp-installed'
 const INSTALLED_FLAG_INFAS = 'prepa-concours:seed-infas-installed'
 const INSTALLED_FLAG_INFAS_BAC = 'prepa-concours:seed-infas-bac-installed'
+const INSTALLED_FLAG_CAFOP_MATHS = 'prepa-concours:seed-cafop-maths-installed'
 const RENAME_FLAG_INFAS_BEPC = 'prepa-concours:rename-infas-bepc-2026-08-30'
 
 /**
@@ -25,6 +26,11 @@ export async function ensureDefaultContent(): Promise<void> {
   await installSeedOnce(INSTALLED_FLAG_INFAS_BAC, async () => {
     const { getSeedInfasBac } = await import('../data/seedInfasBac')
     return getSeedInfasBac()
+  })
+
+  await installSeedOnce(INSTALLED_FLAG_CAFOP_MATHS, async () => {
+    const { getSeedCafopMaths } = await import('../data/seedCafopMaths')
+    return getSeedCafopMaths()
   })
 
   await renameInfasAuxiliaireSanteTitle()

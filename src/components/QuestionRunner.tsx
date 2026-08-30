@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import type { AnsweredQuestion } from '../lib/quiz'
 import { playCorrect, playIncorrect } from '../lib/sounds'
 import { isSpeechEnabled, setSpeechEnabled, speak, speakSequence, stopSpeaking } from '../lib/speech'
+import MathText from './MathText'
 import type { Question } from '../types'
 
 type Props = {
@@ -37,7 +38,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
 
   useEffect(() => {
     stopSpeaking()
-    speak(current.question)
+    speak(current.spoken_text ?? current.question)
     return stopSpeaking
   }, [current.id])
 
@@ -69,7 +70,12 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
     const isCorrect = option === current.correct_answer
     ;(isCorrect ? playCorrect : playIncorrect)()
     stopSpeaking()
-    speakSequence([isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.', current.explanation]).then(() => {
+    // Une explication contenant du LaTeX (formules $...$) se lit mal à voix haute : on se limite
+    // alors au verdict, la formule étant de toute façon affichée et rendue à l'écran.
+    const spokenParts = current.explanation.includes('$')
+      ? [isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.']
+      : [isCorrect ? 'Bonne réponse.' : 'Mauvaise réponse.', current.explanation]
+    speakSequence(spokenParts).then(() => {
       if (autoPlay) advance(option)
     })
   }
@@ -132,7 +138,9 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
       </div>
 
       <div className="rounded-2xl bg-white p-6 shadow-md">
-        <p className="text-xl font-semibold leading-snug text-gray-900">{current.question}</p>
+        <p className="text-xl font-semibold leading-snug text-gray-900">
+          <MathText text={current.question} />
+        </p>
       </div>
 
       <div className="space-y-3">
@@ -172,7 +180,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
               >
                 {selected ? (isCorrectOption ? '✓' : isSelected ? '✗' : opt.key) : opt.key}
               </span>
-              <span>{opt.text}</span>
+              <span><MathText text={opt.text} /></span>
             </button>
           )
         })}
@@ -183,7 +191,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
           <p className={`text-base font-semibold ${selected === current.correct_answer ? 'text-green-700' : 'text-red-700'}`}>
             {selected === current.correct_answer ? '✓ Bonne réponse' : '✗ Mauvaise réponse'}
           </p>
-          <p className="mt-1 text-sm text-gray-700">{current.explanation}</p>
+          <p className="mt-1 text-sm text-gray-700"><MathText text={current.explanation} /></p>
         </div>
       )}
 

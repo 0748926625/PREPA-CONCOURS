@@ -1,4 +1,5 @@
 import type { AnsweredQuestion } from '../lib/quiz'
+import MathText from './MathText'
 import type { Question } from '../types'
 
 function optionText(question: Question, key: 'A' | 'B' | 'C' | 'D'): string {
@@ -15,17 +16,17 @@ export default function AnswerReview({ results }: { results: AnsweredQuestion[] 
       {results.map(({ question, selected, isCorrect }, i) => (
         <div key={question.id} className="rounded-xl bg-white p-4 shadow-sm">
           <p className="text-sm font-medium text-gray-900">
-            {i + 1}. {question.question}
+            {i + 1}. <MathText text={question.question} />
           </p>
           <p className={`mt-1.5 text-sm ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-            {isCorrect ? '✓' : '✗'} Votre réponse : {selected}. {optionText(question, selected)}
+            {isCorrect ? '✓' : '✗'} Votre réponse : {selected}. <MathText text={optionText(question, selected)} />
           </p>
           {!isCorrect && (
             <p className="mt-0.5 text-sm text-green-700">
-              Bonne réponse : {question.correct_answer}. {optionText(question, question.correct_answer)}
+              Bonne réponse : {question.correct_answer}. <MathText text={optionText(question, question.correct_answer)} />
             </p>
           )}
-          <p className="mt-1.5 text-xs text-gray-500">{question.explanation}</p>
+          <p className="mt-1.5 text-xs text-gray-500"><MathText text={question.explanation} /></p>
         </div>
       ))}
     </div>

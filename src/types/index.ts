@@ -44,6 +44,7 @@ export type Question = {
   resource_id: string
   topic_id: string
   question: string
+  spoken_text?: string | null
   option_a: string
   option_b: string
   option_c: string
