@@ -1,17 +1,33 @@
 import { db } from './db'
 
-const INSTALLED_FLAG = 'prepa-concours:seed-fp-installed'
+const INSTALLED_FLAG_FP = 'prepa-concours:seed-fp-installed'
+const INSTALLED_FLAG_INFAS = 'prepa-concours:seed-infas-installed'
 
 /**
- * Installe une fois le contenu par défaut (Statut général de la Fonction Publique, déjà analysé
- * et avec ses QCM générés) pour que l'app soit utile dès la première visite, sans clé API.
- * N'insère qu'une seule fois : si l'utilisateur supprime cette ressource, elle ne revient pas.
+ * Installe une fois les sujets par défaut (contenu déjà analysé et QCM déjà générés) pour que
+ * l'app soit utile dès la première visite, sans clé API. Chaque sujet a son propre drapeau
+ * d'installation : un utilisateur qui a déjà le premier sujet reçoit quand même les suivants
+ * ajoutés plus tard. Si l'utilisateur supprime un sujet par défaut, il ne revient pas.
  */
 export async function ensureDefaultContent(): Promise<void> {
-  if (localStorage.getItem(INSTALLED_FLAG)) return
+  await installSeedOnce(INSTALLED_FLAG_FP, async () => {
+    const { getSeedFonctionPublique } = await import('../data/seedFonctionPublique')
+    return getSeedFonctionPublique()
+  })
 
-  const { getSeedFonctionPublique } = await import('../data/seedFonctionPublique')
-  const { resource, topics, questions } = getSeedFonctionPublique()
+  await installSeedOnce(INSTALLED_FLAG_INFAS, async () => {
+    const { getSeedInfasAuxiliaireSante } = await import('../data/seedInfasAuxiliaireSante')
+    return getSeedInfasAuxiliaireSante()
+  })
+}
+
+async function installSeedOnce(
+  installedFlag: string,
+  loadSeed: () => Promise<Awaited<ReturnType<typeof import('../data/seedFonctionPublique').getSeedFonctionPublique>>>,
+): Promise<void> {
+  if (localStorage.getItem(installedFlag)) return
+
+  const { resource, topics, questions } = await loadSeed()
 
   const existing = await db.resources.get(resource.id)
   if (!existing) {
@@ -22,5 +38,5 @@ export async function ensureDefaultContent(): Promise<void> {
     })
   }
 
-  localStorage.setItem(INSTALLED_FLAG, 'true')
+  localStorage.setItem(installedFlag, 'true')
 }

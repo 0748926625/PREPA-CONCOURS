@@ -6,6 +6,7 @@ export const RESOURCE_CATEGORIES = [
   'Droit',
   'Administration',
   'Concours',
+  'Santé',
   'Enseignement',
   'Formation',
   'Culture générale',
