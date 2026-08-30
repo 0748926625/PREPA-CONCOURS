@@ -24,6 +24,7 @@ export default function App() {
         <Route path="/quiz/:id" element={<Quiz />} />
         <Route path="/results/:id" element={<Results />} />
         <Route path="/weaknesses" element={<Weaknesses />} />
+        <Route path="/remediation" element={<Remediation />} />
         <Route path="/remediation/:topicId" element={<Remediation />} />
         <Route path="/profile" element={<Profile />} />
       </Route>

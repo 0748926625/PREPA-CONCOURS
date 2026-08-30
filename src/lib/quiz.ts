@@ -87,12 +87,16 @@ export async function getSessionResults(sessionId: string): Promise<SessionResul
 }
 
 /**
- * Questions d'une notion actuellement ratées : pour chaque question déjà répondue, on ne garde que sa
- * réponse la plus récente — si l'élève l'a depuis retrouvée, elle sort de la liste. Sert à faire rejouer
- * exactement les questions encore mal maîtrisées plutôt que de régénérer du contenu (§19).
+ * Questions actuellement ratées, pour une ou plusieurs notions : pour chaque question déjà répondue, on
+ * ne garde que sa réponse la plus récente — si l'élève l'a depuis retrouvée, elle sort de la liste. Sert à
+ * faire rejouer en une seule série exactement les questions encore mal maîtrisées, éventuellement à
+ * travers plusieurs notions/ressources à la fois, plutôt que de régénérer du contenu (§19).
  */
-export async function getFailedQuestions(topicId: string): Promise<Question[]> {
-  const topicQuestions = await db.questions.where('topic_id').equals(topicId).toArray()
+export async function getFailedQuestions(topicIds: string | string[]): Promise<Question[]> {
+  const ids = Array.isArray(topicIds) ? topicIds : [topicIds]
+  if (ids.length === 0) return []
+
+  const topicQuestions = await db.questions.where('topic_id').anyOf(ids).toArray()
   const questionIds = topicQuestions.map((q) => q.id)
   if (questionIds.length === 0) return []
 

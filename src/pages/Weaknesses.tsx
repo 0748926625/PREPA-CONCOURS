@@ -25,6 +25,15 @@ export default function Weaknesses() {
       )}
 
       {weaknesses && weaknesses.length > 0 && (
+        <Link
+          to="/remediation"
+          className="block rounded-xl bg-blue-600 px-4 py-3 text-center text-sm font-medium text-white"
+        >
+          Refaire toutes mes questions ratées
+        </Link>
+      )}
+
+      {weaknesses && weaknesses.length > 0 && (
         <section className="space-y-2">
           <h2 className="text-sm font-medium text-gray-700">Notions à revoir</h2>
           {weaknesses.map(({ topic, resource, mastery }) => (
