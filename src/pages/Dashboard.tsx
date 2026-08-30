@@ -4,8 +4,7 @@ import { db } from '../lib/db'
 import PerformanceChart from '../components/PerformanceChart'
 import type { QuizSession } from '../types'
 
-const ACTIONS = [
-  { to: '/qcm', label: 'Commencer à réviser', primary: true },
+const SECONDARY_ACTIONS = [
   { to: '/resources', label: 'Mes ressources' },
   { to: '/weaknesses', label: 'Mes lacunes' },
 ]
@@ -72,16 +71,21 @@ export default function Dashboard() {
         <StatCard label="QCM réalisés" value={stats.quizzesDone} />
       </section>
 
+      <Link
+        to="/qcm"
+        className="block rounded-xl bg-blue-600 px-4 py-3 text-center text-sm font-medium text-white"
+      >
+        Commencer à réviser
+      </Link>
+
       <PerformanceChart sessions={sessions} />
 
       <section className="space-y-2">
-        {ACTIONS.map((action) => (
+        {SECONDARY_ACTIONS.map((action) => (
           <Link
             key={action.label}
             to={action.to}
-            className={`block rounded-xl px-4 py-3 text-center text-sm font-medium ${
-              action.primary ? 'bg-blue-600 text-white' : 'bg-white text-gray-800 shadow-sm'
-            }`}
+            className="block rounded-xl bg-white px-4 py-3 text-center text-sm font-medium text-gray-800 shadow-sm"
           >
             {action.label}
           </Link>
