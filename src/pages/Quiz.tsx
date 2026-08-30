@@ -16,6 +16,17 @@ function shuffle<T>(arr: T[]): T[] {
   return copy
 }
 
+/** Regroupe les questions par notion (toutes celles d'une rubrique se suivent) pour la révision complète. */
+function groupByTopic(questions: Question[]): Question[] {
+  const byTopic = new Map<string, Question[]>()
+  for (const q of questions) {
+    const group = byTopic.get(q.topic_id) ?? []
+    group.push(q)
+    byTopic.set(q.topic_id, group)
+  }
+  return [...byTopic.values()].flat()
+}
+
 export default function Quiz() {
   const { id: resourceId } = useParams<{ id: string }>()
   const navigate = useNavigate()
@@ -32,7 +43,7 @@ export default function Quiz() {
   }, [resourceId])
 
   function startQuiz(mode: 'quick' | 'complete') {
-    const pool = mode === 'quick' ? shuffle(allQuestions).slice(0, QUICK_MODE_SIZE) : shuffle(allQuestions)
+    const pool = mode === 'quick' ? shuffle(allQuestions).slice(0, QUICK_MODE_SIZE) : groupByTopic(allQuestions)
     setSet(pool)
   }
 
