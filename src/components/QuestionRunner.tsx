@@ -103,7 +103,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
   ]
 
   return (
-    <div className="flex min-h-[calc(100svh-11rem)] flex-col justify-center gap-6">
+    <div className="flex min-h-[calc(100svh-11rem)] flex-col justify-center gap-2.5">
       <div>
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-gray-500">
@@ -129,7 +129,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
             </button>
           </div>
         </div>
-        <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-gray-200">
+        <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-gray-200">
           <div
             className="h-full rounded-full bg-gradient-to-r from-blue-500 via-violet-500 to-teal-500 transition-all"
             style={{ width: `${(index / questions.length) * 100}%` }}
@@ -137,13 +137,13 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
         </div>
       </div>
 
-      <div className="rounded-2xl bg-white p-6 shadow-md">
+      <div className="rounded-2xl bg-white p-4 shadow-md">
         <p className="text-xl font-semibold leading-snug text-gray-900">
           <MathText text={current.question} />
         </p>
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-1.5">
         {options.map((opt) => {
           const isCorrectOption = opt.key === current.correct_answer
           const isSelected = opt.key === selected
@@ -173,7 +173,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
               type="button"
               disabled={!!selected}
               onClick={() => handleSelect(opt.key)}
-              className={`flex w-full items-center gap-3 rounded-xl border-2 px-4 py-4 text-left text-base transition-colors ${border} ${anim}`}
+              className={`flex w-full items-center gap-3 rounded-xl border-2 px-4 py-2.5 text-left text-base transition-colors ${border} ${anim}`}
             >
               <span
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white ${badge}`}
@@ -187,11 +187,11 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
       </div>
 
       {selected && (
-        <div className="rounded-2xl bg-gray-50 p-4">
-          <p className={`text-base font-semibold ${selected === current.correct_answer ? 'text-green-700' : 'text-red-700'}`}>
+        <div className="rounded-2xl bg-gray-50 p-2.5">
+          <p className={`text-sm font-semibold ${selected === current.correct_answer ? 'text-green-700' : 'text-red-700'}`}>
             {selected === current.correct_answer ? '✓ Bonne réponse' : '✗ Mauvaise réponse'}
           </p>
-          <p className="mt-1 text-sm text-gray-700"><MathText text={current.explanation} /></p>
+          <p className="mt-0.5 text-sm text-gray-700"><MathText text={current.explanation} /></p>
         </div>
       )}
 
@@ -199,7 +199,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
         type="button"
         onClick={handleNext}
         disabled={!selected || completing}
-        className="w-full rounded-xl bg-blue-600 py-3.5 text-base font-medium text-white shadow-sm disabled:opacity-50"
+        className="w-full rounded-xl bg-blue-600 py-2.5 text-base font-medium text-white shadow-sm disabled:opacity-50"
       >
         {completing ? 'Enregistrement…' : isLast ? completeLabel : 'Question suivante'}
       </button>
@@ -209,7 +209,7 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
           type="button"
           onClick={finishNow}
           disabled={completing}
-          className="w-full rounded-xl border border-gray-300 py-3 text-sm font-medium text-gray-600 disabled:opacity-50"
+          className="w-full rounded-xl border border-gray-300 py-2 text-sm font-medium text-gray-600 disabled:opacity-50"
         >
           Arrêter ici et voir mon bilan ({answeredCount}/{questions.length} répondues)
         </button>
