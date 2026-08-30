@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../lib/db'
+import PerformanceChart from '../components/PerformanceChart'
+import type { QuizSession } from '../types'
 
 const ACTIONS = [
   { to: '/qcm', label: 'Commencer à réviser', primary: true },
@@ -22,6 +24,7 @@ export default function Dashboard() {
     averageScore: null,
     gapsCount: 0,
   })
+  const [sessions, setSessions] = useState<QuizSession[]>([])
 
   useEffect(() => {
     async function load() {
@@ -41,6 +44,7 @@ export default function Dashboard() {
       const gapsCount = masteries.filter((m) => m.status === 'a_revoir' || m.status === 'fragile').length
 
       setStats({ resources, quizzesDone: sessions.length, averageScore, gapsCount })
+      setSessions(sessions)
     }
     load()
   }, [])
@@ -67,6 +71,8 @@ export default function Dashboard() {
         <StatCard label="Ressources" value={stats.resources} />
         <StatCard label="QCM réalisés" value={stats.quizzesDone} />
       </section>
+
+      <PerformanceChart sessions={sessions} />
 
       <section className="space-y-2">
         {ACTIONS.map((action) => (
