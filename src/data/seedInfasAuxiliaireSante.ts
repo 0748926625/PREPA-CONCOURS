@@ -9,7 +9,7 @@ export function getSeedInfasAuxiliaireSante(): { resource: Resource; topics: Top
   return {
     resource: {
       "id": "seed-infas-auxiliaire-sante-2026",
-      "title": "Concours INFAS Auxiliaire de Santé — Banque de 100 QCM",
+      "title": "Concours INFAS Auxiliaire de Santé — Niveau BEPC QCM",
       "category": "Santé",
       "created_at": "2026-08-30T09:00:00.000Z",
       "extracted_text": `CONCOURS AUXILIAIRE DE SANTÉ (INFAS) — Banque Complète de 50 QCM d'Entraînement — Épreuve Officielle
