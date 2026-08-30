@@ -20,7 +20,8 @@ function shuffle<T>(arr: T[]): T[] {
  * Regroupe les questions par notion (toutes celles d'une rubrique se suivent) pour la révision
  * complète, dans l'ordre des rubriques telles que créées pour la ressource — pas dans l'ordre où
  * IndexedDB les restitue, qui trie les clés comme des chaînes ("q10" avant "q2") et ne reflète
- * donc pas l'ordre voulu des rubriques.
+ * donc pas l'ordre voulu des rubriques. À l'intérieur de chaque rubrique, l'ordre des questions est
+ * mélangé (différent à chaque tentative) pour ne pas toujours retomber sur la même première question.
  */
 function groupByTopic(questions: Question[], topics: Topic[]): Question[] {
   const byTopic = new Map<string, Question[]>()
@@ -29,7 +30,7 @@ function groupByTopic(questions: Question[], topics: Topic[]): Question[] {
     group.push(q)
     byTopic.set(q.topic_id, group)
   }
-  return topics.flatMap((t) => byTopic.get(t.id) ?? [])
+  return topics.flatMap((t) => shuffle(byTopic.get(t.id) ?? []))
 }
 
 /** Trie les rubriques par leur suffixe numérique (…-t0, …-t1, …-t10…) plutôt que par ordre lexical de clé. */
