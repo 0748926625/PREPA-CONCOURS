@@ -2,7 +2,7 @@ const DEVICE_ID_KEY = 'prepa-concours:device-id'
 const LICENSE_KEY_KEY = 'prepa-concours:license-key'
 const TRIAL_USED_MS_KEY = 'prepa-concours:trial-used-ms'
 
-export const TRIAL_DURATION_MS = 7 * 60 * 1000
+export const TRIAL_DURATION_MS = 30 * 60 * 1000
 export const CONTACT_PHONE_DISPLAY = '+225 07 48 92 66 25'
 export const CONTACT_PHONE_TEL_URL = 'tel:+2250748926625'
 export const CONTACT_WHATSAPP_URL = 'https://wa.me/225748926625'
