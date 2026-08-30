@@ -2,6 +2,7 @@ import { db } from './db'
 
 const INSTALLED_FLAG_FP = 'prepa-concours:seed-fp-installed'
 const INSTALLED_FLAG_INFAS = 'prepa-concours:seed-infas-installed'
+const INSTALLED_FLAG_INFAS_BAC = 'prepa-concours:seed-infas-bac-installed'
 
 /**
  * Installe une fois les sujets par défaut (contenu déjà analysé et QCM déjà générés) pour que
@@ -18,6 +19,11 @@ export async function ensureDefaultContent(): Promise<void> {
   await installSeedOnce(INSTALLED_FLAG_INFAS, async () => {
     const { getSeedInfasAuxiliaireSante } = await import('../data/seedInfasAuxiliaireSante')
     return getSeedInfasAuxiliaireSante()
+  })
+
+  await installSeedOnce(INSTALLED_FLAG_INFAS_BAC, async () => {
+    const { getSeedInfasBac } = await import('../data/seedInfasBac')
+    return getSeedInfasBac()
   })
 }
 
