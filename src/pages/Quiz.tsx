@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { db } from '../lib/db'
 import { saveQuizSession, type AnsweredQuestion } from '../lib/quiz'
 import QuestionRunner from '../components/QuestionRunner'
-import type { Question, Resource } from '../types'
+import type { Question, Resource, Topic } from '../types'
 
 const QUICK_MODE_SIZE = 10
 
@@ -16,15 +16,26 @@ function shuffle<T>(arr: T[]): T[] {
   return copy
 }
 
-/** Regroupe les questions par notion (toutes celles d'une rubrique se suivent) pour la révision complète. */
-function groupByTopic(questions: Question[]): Question[] {
+/**
+ * Regroupe les questions par notion (toutes celles d'une rubrique se suivent) pour la révision
+ * complète, dans l'ordre des rubriques telles que créées pour la ressource — pas dans l'ordre où
+ * IndexedDB les restitue, qui trie les clés comme des chaînes ("q10" avant "q2") et ne reflète
+ * donc pas l'ordre voulu des rubriques.
+ */
+function groupByTopic(questions: Question[], topics: Topic[]): Question[] {
   const byTopic = new Map<string, Question[]>()
   for (const q of questions) {
     const group = byTopic.get(q.topic_id) ?? []
     group.push(q)
     byTopic.set(q.topic_id, group)
   }
-  return [...byTopic.values()].flat()
+  return topics.flatMap((t) => byTopic.get(t.id) ?? [])
+}
+
+/** Trie les rubriques par leur suffixe numérique (…-t0, …-t1, …-t10…) plutôt que par ordre lexical de clé. */
+function sortTopicsByCreationOrder(topics: Topic[]): Topic[] {
+  const suffix = (id: string) => Number(id.match(/-t(\d+)$/)?.[1] ?? 0)
+  return [...topics].sort((a, b) => suffix(a.id) - suffix(b.id))
 }
 
 export default function Quiz() {
@@ -33,6 +44,7 @@ export default function Quiz() {
 
   const [resource, setResource] = useState<Resource | null | undefined>(undefined)
   const [allQuestions, setAllQuestions] = useState<Question[]>([])
+  const [topics, setTopics] = useState<Topic[]>([])
   const [set, setSet] = useState<Question[] | null>(null) // null tant que le mode n'est pas choisi
   const [saving, setSaving] = useState(false)
 
@@ -40,10 +52,15 @@ export default function Quiz() {
     if (!resourceId) return
     db.resources.get(resourceId).then((r) => setResource(r ?? null))
     db.questions.where('resource_id').equals(resourceId).toArray().then(setAllQuestions)
+    db.topics
+      .where('resource_id')
+      .equals(resourceId)
+      .toArray()
+      .then((t) => setTopics(sortTopicsByCreationOrder(t)))
   }, [resourceId])
 
   function startQuiz(mode: 'quick' | 'complete') {
-    const pool = mode === 'quick' ? shuffle(allQuestions).slice(0, QUICK_MODE_SIZE) : groupByTopic(allQuestions)
+    const pool = mode === 'quick' ? shuffle(allQuestions).slice(0, QUICK_MODE_SIZE) : groupByTopic(allQuestions, topics)
     setSet(pool)
   }
 
