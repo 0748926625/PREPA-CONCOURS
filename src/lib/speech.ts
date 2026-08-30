@@ -15,10 +15,17 @@ function pickFrenchVoice(): SpeechSynthesisVoice | undefined {
   return window.speechSynthesis.getVoices().find((v) => v.lang.toLowerCase().startsWith('fr'))
 }
 
-/** Lit un texte à voix haute ; se résout une fois la lecture terminée (immédiatement si désactivé/indisponible). */
+// Incrémenté à chaque stopSpeaking() : permet à une séquence en cours (question + explication)
+// de savoir qu'elle a été annulée et de ne pas enchaîner sur le texte suivant — sans quoi, une
+// fois l'utterance en cours coupée par cancel(), speakSequence() continuait avec le texte suivant
+// (ex. l'explication) et le faisait parler par-dessus la question suivante déjà lancée (§ chevauchement).
+let generation = 0
+
+/** Lit un texte à voix haute ; se résout une fois la lecture terminée (immédiatement si désactivé/indisponible/annulé). */
 export function speak(text: string): Promise<void> {
+  const myGeneration = generation
   return new Promise((resolve) => {
-    if (!isSpeechEnabled() || !('speechSynthesis' in window) || !text) {
+    if (!isSpeechEnabled() || !('speechSynthesis' in window) || !text || myGeneration !== generation) {
       resolve()
       return
     }
@@ -36,13 +43,16 @@ export function speak(text: string): Promise<void> {
   })
 }
 
-/** Lit plusieurs textes l'un après l'autre ; se résout quand le dernier est terminé. */
+/** Lit plusieurs textes l'un après l'autre ; s'arrête sans enchaîner si stopSpeaking() l'interrompt en route. */
 export async function speakSequence(texts: string[]): Promise<void> {
+  const myGeneration = generation
   for (const text of texts) {
+    if (myGeneration !== generation) return
     await speak(text)
   }
 }
 
 export function stopSpeaking(): void {
+  generation++
   if ('speechSynthesis' in window) window.speechSynthesis.cancel()
 }
