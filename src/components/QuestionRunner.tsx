@@ -79,6 +79,16 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
     advance(selected)
   }
 
+  function finishNow() {
+    const finalResults = selected
+      ? [...results, { question: current, selected, isCorrect: selected === current.correct_answer }]
+      : results
+    if (finalResults.length === 0) return
+    onComplete(finalResults)
+  }
+
+  const answeredCount = results.length + (selected ? 1 : 0)
+
   const options: { key: 'A' | 'B' | 'C' | 'D'; text: string }[] = [
     { key: 'A', text: current.option_a },
     { key: 'B', text: current.option_b },
@@ -185,6 +195,17 @@ export default function QuestionRunner({ questions, onComplete, completing = fal
       >
         {completing ? 'Enregistrement…' : isLast ? completeLabel : 'Question suivante'}
       </button>
+
+      {!isLast && answeredCount > 0 && (
+        <button
+          type="button"
+          onClick={finishNow}
+          disabled={completing}
+          className="w-full rounded-xl border border-gray-300 py-3 text-sm font-medium text-gray-600 disabled:opacity-50"
+        >
+          Arrêter ici et voir mon bilan ({answeredCount}/{questions.length} répondues)
+        </button>
+      )}
     </div>
   )
 }
