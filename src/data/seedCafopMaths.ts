@@ -113,7 +113,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{ac - bi}{bc}$",
     "option_d": "$\\frac{a + bi}{bc}$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $\\frac{ac + bi}{bc}$",
+    "explanation": "$\\frac{ac + bi}{bc}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #1"
   },
@@ -128,7 +128,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{et + ba}{bt}$",
     "option_d": "$\\frac{e - a}{bt}$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $\\frac{et - ba}{bt}$",
+    "explanation": "$\\frac{et - ba}{bt}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #2"
   },
@@ -143,7 +143,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{ad}{be}$",
     "option_d": "$\\frac{ad}{b + e}$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $\\frac{ad}{be}$",
+    "explanation": "$\\frac{ad}{be}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #3"
   },
@@ -158,7 +158,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{bf - a}{b}$",
     "option_d": "$\\frac{a + bf}{b}$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $\\frac{a + bf}{b}$",
+    "explanation": "$\\frac{a + bf}{b}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #4"
   },
@@ -173,7 +173,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{ab}{cd}$",
     "option_d": "$\\frac{cd}{ab}$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $\\frac{ad}{bc}$",
+    "explanation": "$\\frac{ad}{bc}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #5"
   },
@@ -188,7 +188,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a = \\frac{bc}{d}$",
     "option_d": "$bd = ac$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $ad = bc$",
+    "explanation": "$ad = bc$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #6"
   },
@@ -203,7 +203,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^{-n}$",
     "option_d": "$n^{-a}$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $a^{-n}$",
+    "explanation": "$a^{-n}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #7"
   },
@@ -218,7 +218,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^n b^n$",
     "option_d": "$(ab)^n$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $(ab)^n$",
+    "explanation": "$(ab)^n$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #8"
   },
@@ -233,7 +233,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^{mn}$",
     "option_d": "$a^{m \\times n}$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $a^{m + n}$",
+    "explanation": "$a^{m + n}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #9"
   },
@@ -248,7 +248,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^{mn}$",
     "option_d": "$(a^{m + n})$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $a^{m \\times n}$",
+    "explanation": "$a^{m \\times n}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #10"
   },
@@ -263,7 +263,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^{m - n}$",
     "option_d": "$a^{mn}$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $a^{m - n}$",
+    "explanation": "$a^{m - n}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #11"
   },
@@ -278,7 +278,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a + b + c - d - e$",
     "option_d": "$a + b - c - d + e$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $a + b - c - d + e$",
+    "explanation": "$a + b - c - d + e$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #12"
   },
@@ -293,7 +293,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ax + ay + az$",
     "option_d": "$a + x + y - z$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $ax + ay - az$",
+    "explanation": "$ax + ay - az$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #13"
   },
@@ -308,7 +308,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^2 - 2a + b^2$",
     "option_d": "$a^2 - b^2$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $a^2 - 2ab + b^2$",
+    "explanation": "$a^2 - 2ab + b^2$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #14"
   },
@@ -323,7 +323,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^2 - b^2$",
     "option_d": "$a^2 + ab - b^2$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $a^2 - b^2$",
+    "explanation": "$a^2 - b^2$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #15"
   },
@@ -338,7 +338,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "ab = 1",
     "option_d": "a = 0 ou b = 0",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : a = 0 ou b = 0",
+    "explanation": "a = 0 ou b = 0",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #16"
   },
@@ -353,7 +353,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "a = -b seulement",
     "option_d": "$a^2 = b^2$ n’a pas de solution",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : a = b ou a = -b",
+    "explanation": "a = b ou a = -b",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #17"
   },
@@ -368,7 +368,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "expression algébrique de degré 5",
     "option_d": "polynôme en 5 de degré x",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : polynôme en x de degré 5",
+    "explanation": "polynôme en x de degré 5",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #18"
   },
@@ -383,7 +383,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "une fraction rationnelle",
     "option_d": "une équation",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : une fraction rationnelle",
+    "explanation": "une fraction rationnelle",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #19"
   },
@@ -398,7 +398,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "le dénominateur est positif",
     "option_d": "son dénominateur est différent de 0",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : son dénominateur est différent de 0",
+    "explanation": "son dénominateur est différent de 0",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Calcul littéral #20"
   },
@@ -413,7 +413,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Montrer que des points sont alignés",
     "option_d": "Déterminer les angles d’un triangle",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Calculer des distances ou justifier une égalité de quotients",
+    "explanation": "Calculer des distances ou justifier une égalité de quotients",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #21"
   },
@@ -428,7 +428,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{AM}{AC} = \\frac{AN}{AB}$",
     "option_d": "$AM \\cdot AB = AN \\cdot AC$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $\\frac{AM}{AB} = \\frac{AN}{AC}$",
+    "explanation": "$\\frac{AM}{AB} = \\frac{AN}{AC}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #22"
   },
@@ -443,7 +443,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{AB}{AE} = \\frac{AC}{AD}$",
     "option_d": "$AB \\cdot AD = AC \\cdot AF$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $\\frac{AB}{AE} = \\frac{AC}{AD}$",
+    "explanation": "$\\frac{AB}{AE} = \\frac{AC}{AD}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #23"
   },
@@ -458,7 +458,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$OA \\cdot OC = OD \\cdot OB$",
     "option_d": "$\\frac{OA}{OD} = \\frac{OB}{OC}$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $\\frac{OA}{OD} = \\frac{OB}{OC}$",
+    "explanation": "$\\frac{OA}{OD} = \\frac{OB}{OC}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #24"
   },
@@ -473,7 +473,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$KE \\cdot KA = KB \\cdot KF$",
     "option_d": "$\\frac{KB}{KE} = \\frac{KA}{KF}$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $\\frac{KE}{KB} = \\frac{KF}{KA}$",
+    "explanation": "$\\frac{KE}{KB} = \\frac{KF}{KA}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #25"
   },
@@ -488,7 +488,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "perpendiculaires",
     "option_d": "concourantes",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : parallèles",
+    "explanation": "parallèles",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #26"
   },
@@ -503,7 +503,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Calculer des distances",
     "option_d": "Calculer des mesures d'angles ",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Calculer des distances",
+    "explanation": "Calculer des distances",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #27"
   },
@@ -518,7 +518,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{KE}{KF} = \\frac{KB}{KA} = \\frac{AB}{EF}$",
     "option_d": "$\\frac{KE}{KB} = \\frac{KF}{KA} = \\frac{EF}{AB}$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $\\frac{KE}{KB} = \\frac{KF}{KA} = \\frac{EF}{AB}$",
+    "explanation": "$\\frac{KE}{KB} = \\frac{KF}{KA} = \\frac{EF}{AB}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — La propriété de Thalès #28"
   },
@@ -533,7 +533,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "49",
     "option_d": "9",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 7",
+    "explanation": "7",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #29"
   },
@@ -548,7 +548,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "25",
     "option_d": "6",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : 5",
+    "explanation": "5",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #30"
   },
@@ -563,7 +563,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "4",
     "option_d": "2",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 4",
+    "explanation": "4",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #31"
   },
@@ -578,7 +578,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "6",
     "option_d": "8",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 8",
+    "explanation": "8",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #32"
   },
@@ -593,7 +593,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "100",
     "option_d": "20",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 10",
+    "explanation": "10",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #33"
   },
@@ -608,7 +608,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "144",
     "option_d": "14",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : 12",
+    "explanation": "12",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #34"
   },
@@ -623,7 +623,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "3",
     "option_d": "1",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 3",
+    "explanation": "3",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #35"
   },
@@ -638,7 +638,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "2",
     "option_d": "1",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 1",
+    "explanation": "1",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #36"
   },
@@ -653,7 +653,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "81",
     "option_d": "8",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 9",
+    "explanation": "9",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #37"
   },
@@ -668,7 +668,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "-0",
     "option_d": "$\\sqrt{}$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : 0",
+    "explanation": "0",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #38"
   },
@@ -683,7 +683,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "11",
     "option_d": "10",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 11",
+    "explanation": "11",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #39"
   },
@@ -698,7 +698,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$+\\sqrt{a}$",
     "option_d": "$-\\sqrt{a}$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $-\\sqrt{a}$",
+    "explanation": "$-\\sqrt{a}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #40"
   },
@@ -713,7 +713,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\sqrt{a}+b$",
     "option_d": "$b+\\sqrt{a}$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $b-\\sqrt{a}$",
+    "explanation": "$b-\\sqrt{a}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #41"
   },
@@ -728,7 +728,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$b\\sqrt{c}-a$",
     "option_d": "$-a - b\\sqrt{c}$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $a - b\\sqrt{c}$",
+    "explanation": "$a - b\\sqrt{c}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #42"
   },
@@ -743,7 +743,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "a",
     "option_d": "$a\\sqrt{a}$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : a",
+    "explanation": "a",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #43"
   },
@@ -758,7 +758,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^2$",
     "option_d": "|a|",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : |a|",
+    "explanation": "|a|",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #44"
   },
@@ -773,7 +773,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\sqrt{a}+\\sqrt{b}$",
     "option_d": "$\\sqrt{a+b}$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $\\sqrt{a} \\times \\sqrt{b}$",
+    "explanation": "$\\sqrt{a} \\times \\sqrt{b}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #45"
   },
@@ -788,7 +788,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\sqrt{a} \\cdot b$",
     "option_d": "$\\frac{a}{\\sqrt{b}}$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $\\frac{\\sqrt{a}}{\\sqrt{b}}$",
+    "explanation": "$\\frac{\\sqrt{a}}{\\sqrt{b}}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #46"
   },
@@ -803,7 +803,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^n$",
     "option_d": "$n\\cdot a^2$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $a^n$",
+    "explanation": "$a^n$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #47"
   },
@@ -818,7 +818,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\sqrt{a}\\cdot a^n$",
     "option_d": "$a^n\\sqrt{a}$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $a^n\\sqrt{a}$",
+    "explanation": "$a^n\\sqrt{a}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #48"
   },
@@ -833,7 +833,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a^2\\sqrt{b}$",
     "option_d": "2ab",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $a^2b$",
+    "explanation": "$a^2b$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #49"
   },
@@ -848,7 +848,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La factorisation",
     "option_d": "La conjugaison",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La rationalisation",
+    "explanation": "La rationalisation",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Racines carrées #50"
   },
@@ -863,7 +863,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$AB^2 + BC^2$",
     "option_d": "$AB^2 - BC^2$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $AB^2 + BC^2$",
+    "explanation": "$AB^2 + BC^2$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #51"
   },
@@ -878,7 +878,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$BC^2 + AC^2$",
     "option_d": "$AC^2 - BC^2$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $AC^2 - BC^2$",
+    "explanation": "$AC^2 - BC^2$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #52"
   },
@@ -893,7 +893,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$EF \\times FT = FG \\times EG$",
     "option_d": "$EF \\times EG = FG \\times ET$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $EF \\times FG = FT \\times EG$",
+    "explanation": "$EF \\times FG = FT \\times EG$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #53"
   },
@@ -908,7 +908,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "à la différence des carrés des deux autres côtés",
     "option_d": "au double de la plus petite longueur",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : à la somme des carrés des deux autres côtés",
+    "explanation": "à la somme des carrés des deux autres côtés",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #54"
   },
@@ -923,7 +923,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "calculer la longueur d’un segment ",
     "option_d": "trouver le centre d’un cercle inscrit",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : calculer la longueur d’un segment ",
+    "explanation": "calculer la longueur d’un segment ",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #55"
   },
@@ -938,7 +938,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "prouver que deux droites sont parallèles",
     "option_d": "démontrer qu’un triangle est rectangle",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : démontrer qu’un triangle est rectangle",
+    "explanation": "démontrer qu’un triangle est rectangle",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #56"
   },
@@ -953,7 +953,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "le triangle est isocèle",
     "option_d": "le triangle est quelconque",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : le triangle est rectangle",
+    "explanation": "le triangle est rectangle",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #57"
   },
@@ -968,7 +968,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{\\text{côté opposé}}{\\text{côté adjacent}}$",
     "option_d": "$\\frac{\\text{hypoténuse}}{\\text{côté opposé}}$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $\\frac{\\text{côté opposé}}{\\text{hypoténuse}}$",
+    "explanation": "$\\frac{\\text{côté opposé}}{\\text{hypoténuse}}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #58"
   },
@@ -983,7 +983,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{\\text{côté adjacent}}{\\text{hypoténuse}}$",
     "option_d": "$\\frac{\\text{côté adjacent}}{\\text{côté opposé}}$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $\\frac{\\text{côté adjacent}}{\\text{hypoténuse}}$",
+    "explanation": "$\\frac{\\text{côté adjacent}}{\\text{hypoténuse}}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #59"
   },
@@ -998,7 +998,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{\\text{côté opposé}}{\\text{hypoténuse}}$",
     "option_d": "$\\frac{\\text{côté opposé}}{\\text{côté adjacent}}$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $\\frac{\\text{côté opposé}}{\\text{côté adjacent}}$",
+    "explanation": "$\\frac{\\text{côté opposé}}{\\text{côté adjacent}}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #60"
   },
@@ -1013,7 +1013,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\tan\\theta = \\sin\\theta + \\cos\\theta$",
     "option_d": "$\\cos\\theta = 1 - \\sin\\theta$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $\\sin^2\\theta + \\cos^2\\theta = 1$",
+    "explanation": "$\\sin^2\\theta + \\cos^2\\theta = 1$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #61"
   },
@@ -1028,7 +1028,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "égaux",
     "option_d": "supplémentaires",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : complémentaires, donc leur somme fait $90^\\circ$",
+    "explanation": "complémentaires, donc leur somme fait $90^\\circ$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Triangle rectangle #62"
   },
@@ -1043,7 +1043,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "l’ensemble des éléments appartenant à A et B",
     "option_d": "l’ensemble des éléments n’appartenant ni à A ni à B",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : l’ensemble des éléments appartenant à A et B",
+    "explanation": "l’ensemble des éléments appartenant à A et B",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #63"
   },
@@ -1058,7 +1058,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "un sous-ensemble de A seulement",
     "option_d": "l’ensemble des éléments appartenant à A ou B",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : l’ensemble des éléments appartenant à A ou B",
+    "explanation": "l’ensemble des éléments appartenant à A ou B",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #64"
   },
@@ -1073,7 +1073,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{1}{4} = \\frac{1}{7}$",
     "option_d": "$\\frac{1}{4} + \\frac{1}{7} = 0$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $\\frac{1}{4} > \\frac{1}{7}$",
+    "explanation": "$\\frac{1}{4} > \\frac{1}{7}$",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #65"
   },
@@ -1088,7 +1088,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$a + b < E + F <c + d$",
     "option_d": "$a + d < E + F <b + c$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $a + c < E + F < b + d$",
+    "explanation": "$a + c < E + F < b + d$",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #66"
   },
@@ -1103,7 +1103,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Positif",
     "option_d": "Impossible à déterminer",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Positif",
+    "explanation": "Positif",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #67"
   },
@@ -1118,7 +1118,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$0$",
     "option_d": "$\\pi - 2$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $\\pi - 2$",
+    "explanation": "$\\pi - 2$",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #68"
   },
@@ -1133,7 +1133,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\pi + 7$",
     "option_d": "$0$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $7 - \\pi$",
+    "explanation": "$7 - \\pi$",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #69"
   },
@@ -1148,7 +1148,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "0",
     "option_d": "$j \\times f$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $j - f$",
+    "explanation": "$j - f$",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #70"
   },
@@ -1163,7 +1163,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$\\frac{a + z}{2}$",
     "option_d": "$z$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $\\frac{a + z}{2}$",
+    "explanation": "$\\frac{a + z}{2}$",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #71"
   },
@@ -1178,7 +1178,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "intervalle ouvert en 3 et fermé en 17",
     "option_d": "intervalle fermé 3;17",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : intervalle fermé 3;17",
+    "explanation": "intervalle fermé 3;17",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #72"
   },
@@ -1193,7 +1193,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "intervalle des nombres supérieurs à 5",
     "option_d": "intervalle des nombres inférieurs ou égaux à -5",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : intervalle des nombres supérieurs ou égaux à -5",
+    "explanation": "intervalle des nombres supérieurs ou égaux à -5",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #73"
   },
@@ -1208,7 +1208,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "intervalle ouvert  -1 ; 4",
     "option_d": "intervalle fermé -1 ; 4",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : intervalle ouvert à -1 et fermé à 4",
+    "explanation": "intervalle ouvert à -1 et fermé à 4",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #74"
   },
@@ -1223,7 +1223,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "intervalle des nombres inférieurs ou égaux à 6",
     "option_d": "intervalle des nombres supérieurs à 6",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : intervalle des nombres inférieurs ou égaux à 6",
+    "explanation": "intervalle des nombres inférieurs ou égaux à 6",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #75"
   },
@@ -1238,7 +1238,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "intervalle ouvert 2; 14",
     "option_d": "intervalle fermé en 2 et ouvert en 14",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : intervalle fermé en 2 et ouvert en 14",
+    "explanation": "intervalle fermé en 2 et ouvert en 14",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Calcul numérique #76"
   },
@@ -1253,7 +1253,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Angle au centre",
     "option_d": "Angle plat",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Angle aigu inscrit",
+    "explanation": "Angle aigu inscrit",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Angles inscrits dans un cercle #77"
   },
@@ -1268,7 +1268,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$90^\\circ$",
     "option_d": "$150^\\circ$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $75^\\circ$",
+    "explanation": "$75^\\circ$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Angles inscrits dans un cercle #78"
   },
@@ -1283,7 +1283,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Angle aigu inscrit",
     "option_d": "Angle plat",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Angle aigu inscrit",
+    "explanation": "Angle aigu inscrit",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Angles inscrits dans un cercle #79"
   },
@@ -1298,7 +1298,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$160^\\circ$",
     "option_d": "$40^\\circ$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $40^\\circ$",
+    "explanation": "$40^\\circ$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Angles inscrits dans un cercle #80"
   },
@@ -1313,7 +1313,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Angle droit",
     "option_d": "Angle plat",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Angle au centre",
+    "explanation": "Angle au centre",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Angles inscrits dans un cercle #81"
   },
@@ -1328,7 +1328,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$80^\\circ$",
     "option_d": "$150^\\circ$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $65^\\circ$",
+    "explanation": "$65^\\circ$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Angles inscrits dans un cercle #82"
   },
@@ -1343,7 +1343,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Sa direction, son sens et sa norme",
     "option_d": "Son angle et sa surface",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Sa direction, son sens et sa norme",
+    "explanation": "Sa direction, son sens et sa norme",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Vecteurs #83"
   },
@@ -1358,7 +1358,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\overrightarrow{0} $",
     "option_d": "$ \\overrightarrow{AC} $",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $ \\overrightarrow{AC} $",
+    "explanation": "$ \\overrightarrow{AC} $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Vecteurs #84"
   },
@@ -1373,7 +1373,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Ils forment un angle droit",
     "option_d": "Ils partagent la même origine",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Il existe un réel $ k $ tel que $ \\overrightarrow{u} = k \\overrightarrow{v} $",
+    "explanation": "Il existe un réel $ k $ tel que $ \\overrightarrow{u} = k \\overrightarrow{v} $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Vecteurs #85"
   },
@@ -1388,7 +1388,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Ils sont opposés",
     "option_d": "Ils sont nuls",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Ils ont même direction, sens et longueur",
+    "explanation": "Ils ont même direction, sens et longueur",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Vecteurs #86"
   },
@@ -1403,7 +1403,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\overrightarrow{CB} $",
     "option_d": "$ \\overrightarrow{0} $",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $ \\overrightarrow{CB} $",
+    "explanation": "$ \\overrightarrow{CB} $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Vecteurs #87"
   },
@@ -1418,7 +1418,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\overrightarrow{AB} $",
     "option_d": "$ \\overrightarrow{AC} $",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $ \\overrightarrow{AC} $",
+    "explanation": "$ \\overrightarrow{AC} $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Vecteurs #88"
   },
@@ -1433,7 +1433,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$OI = 2\\times OJ$",
     "option_d": "Seulement $(OI) \\perp (OJ)$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $(OI) \\perp (OJ)$ et $OI = OJ$",
+    "explanation": "$(OI) \\perp (OJ)$ et $OI = OJ$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #89"
   },
@@ -1448,7 +1448,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ ( x_1 - x_2 ; y_1 - y_2 ) $",
     "option_d": "$ ( \\frac{x_1+x_2}{2} ; \\frac{y_1+y_2}{2} ) $",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $ ( x_2 - x_1 ; y_2 - y_1 ) $",
+    "explanation": "$ ( x_2 - x_1 ; y_2 - y_1 ) $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #90"
   },
@@ -1463,7 +1463,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ xy' - x'y = 0 $",
     "option_d": "$ \\frac{x}{x'} = \\frac{y}{y'} $",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $ xy' - x'y = 0 $",
+    "explanation": "$ xy' - x'y = 0 $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #91"
   },
@@ -1478,7 +1478,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ M( \\frac{x_A}{2} ; \\frac{y_B}{2} ) $",
     "option_d": "$ M( \\frac{x_A + x_B}{2} ; \\frac{y_A + y_B}{2} ) $",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $ M( \\frac{x_A + x_B}{2} ; \\frac{y_A + y_B}{2} ) $",
+    "explanation": "$ M( \\frac{x_A + x_B}{2} ; \\frac{y_A + y_B}{2} ) $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #92"
   },
@@ -1493,7 +1493,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ AB = \\frac{(x_B - x_A) + (y_B - y_A)}{2} $",
     "option_d": "$ AB = (x_B - x_A) \\times (y_B - y_A) $",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $ AB = \\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2} $",
+    "explanation": "$ AB = \\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2} $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #93"
   },
@@ -1508,7 +1508,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\frac{a}{c} = \\frac{b}{d} $",
     "option_d": "$ a + c = b + d $",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $ ac + bd = 0 $",
+    "explanation": "$ ac + bd = 0 $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #94"
   },
@@ -1523,7 +1523,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\overrightarrow{AB}(kx ; ky) $",
     "option_d": "$ \\overrightarrow{AB}(x^k ; y^k) $",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $ \\overrightarrow{AB}(kx ; ky) $",
+    "explanation": "$ \\overrightarrow{AB}(kx ; ky) $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Coordonnées de vecteurs #95"
   },
@@ -1538,7 +1538,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ x = 0 $",
     "option_d": "$ x = -\\frac{b}{a} $",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $ x = -\\frac{b}{a} $",
+    "explanation": "$ x = -\\frac{b}{a} $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #96"
   },
@@ -1553,7 +1553,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Diviser par $ x $ des deux côtés",
     "option_d": "Remplacer $ x $ par 0",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Isoler $ x $ en regroupant les termes",
+    "explanation": "Isoler $ x $ en regroupant les termes",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #97"
   },
@@ -1568,7 +1568,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Les deux facteurs sont égaux",
     "option_d": "Le produit est toujours positif",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Au moins un des facteurs est nul",
+    "explanation": "Au moins un des facteurs est nul",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #98"
   },
@@ -1583,7 +1583,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "On inverse le sens de l'inégalité",
     "option_d": "On ajoute 1 aux deux membres",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : On inverse le sens de l'inégalité",
+    "explanation": "On inverse le sens de l'inégalité",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #99"
   },
@@ -1598,7 +1598,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ [5 ; 10] $",
     "option_d": "$ [5 ; +\\infty[ $",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $ [5 ; +\\infty[ $",
+    "explanation": "$ [5 ; +\\infty[ $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #100"
   },
@@ -1613,7 +1613,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La moyenne des solutions",
     "option_d": "Aucune solution possible",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : L'intersection des deux ensembles de solutions",
+    "explanation": "L'intersection des deux ensembles de solutions",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #101"
   },
@@ -1628,7 +1628,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Trouver $ x $ tel que $ 70x > 90x $",
     "option_d": "Ignorer les constantes",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Résoudre $ 10000 + 70x = 7000 + 90x $",
+    "explanation": "Résoudre $ 10000 + 70x = 7000 + 90x $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations et inéquations #102"
   },
@@ -1643,7 +1643,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ px + qy + r = 0 $ (avec $ p $ et $ q $ non tous nuls)",
     "option_d": "$ ax + b = 0 $",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $ px + qy + r = 0 $ (avec $ p $ et $ q $ non tous nuls)",
+    "explanation": "$ px + qy + r = 0 $ (avec $ p $ et $ q $ non tous nuls)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #103"
   },
@@ -1658,7 +1658,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Sa couleur sur un graphique",
     "option_d": "Son inclinaison par rapport à l'axe des abscisses",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Son inclinaison par rapport à l'axe des abscisses",
+    "explanation": "Son inclinaison par rapport à l'axe des abscisses",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #104"
   },
@@ -1673,7 +1673,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Elles passent toujours par l'origine",
     "option_d": "Leur équation est $ y = ax + b $",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Leur équation est de la forme $ x = k $",
+    "explanation": "Leur équation est de la forme $ x = k $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #105"
   },
@@ -1688,7 +1688,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "L'abscisse du sommet de la droite",
     "option_d": "La longueur de la droite",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le point où la droite coupe l'axe des ordonnées",
+    "explanation": "Le point où la droite coupe l'axe des ordonnées",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #106"
   },
@@ -1703,7 +1703,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Le produit de leurs coefficients directeurs vaut $ -1 $",
     "option_d": "Elles se croisent à l'origine",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le produit de leurs coefficients directeurs vaut $ -1 $",
+    "explanation": "Le produit de leurs coefficients directeurs vaut $ -1 $",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #107"
   },
@@ -1718,7 +1718,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Son coefficient directeur est 5",
     "option_d": "Elle est parallèle à l'axe des abscisses",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Elle est parallèle à l'axe des abscisses",
+    "explanation": "Elle est parallèle à l'axe des abscisses",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #108"
   },
@@ -1733,7 +1733,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Utiliser le théorème de Pythagore",
     "option_d": "Résoudre un système trigonométrique",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Vérifier la colinéarité des vecteurs",
+    "explanation": "Vérifier la colinéarité des vecteurs",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Équations de droites #109"
   },
@@ -1748,7 +1748,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Elle n'admet qu'une seule solution",
     "option_d": "Elle ne contient que des égalités strictes",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Elle définit un demi-plan dans un repère orthonormé",
+    "explanation": "Elle définit un demi-plan dans un repère orthonormé",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #110"
   },
@@ -1763,7 +1763,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Le point d'intersection des deux droites",
     "option_d": "La distance entre les droites",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le point d'intersection des deux droites",
+    "explanation": "Le point d'intersection des deux droites",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #111"
   },
@@ -1778,7 +1778,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Les ordonnées à l'origine sont égales",
     "option_d": "Les droites associées sont parallèles et distinctes",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Les droites associées sont parallèles et distinctes",
+    "explanation": "Les droites associées sont parallèles et distinctes",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #112"
   },
@@ -1793,7 +1793,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La zone exclue par les deux inéquations",
     "option_d": "Le point de rencontre des axes",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : L'ensemble des solutions communes aux deux inéquations",
+    "explanation": "L'ensemble des solutions communes aux deux inéquations",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #113"
   },
@@ -1808,7 +1808,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Tracer les droites associées",
     "option_d": "Utiliser des coefficients négatifs",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Éliminer une variable en additionnant des équations multipliées",
+    "explanation": "Éliminer une variable en additionnant des équations multipliées",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #114"
   },
@@ -1823,7 +1823,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Remplacer x et y dans l'inéquation et vérifier l'inégalité",
     "option_d": "Comparer les coefficients directeurs",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Remplacer x et y dans l'inéquation et vérifier l'inégalité",
+    "explanation": "Remplacer x et y dans l'inéquation et vérifier l'inégalité",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #115"
   },
@@ -1838,7 +1838,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "L'inéquation n'admet pas de solutions",
     "option_d": "Les solutions sont dans le demi-plan ne contenant pas la droite frontière",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Les solutions sont dans le demi-plan ne contenant pas la droite frontière",
+    "explanation": "Les solutions sont dans le demi-plan ne contenant pas la droite frontière",
     "difficulty": "difficile",
     "source_reference": "CAFOP Maths — Équations et inéquations dans ℝ × ℝ #116"
   },
@@ -1853,7 +1853,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "C'est toujours la première valeur de la série",
     "option_d": "On utilise la formule $ \\frac{n}{2} $",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : C'est la valeur centrale de la série ordonnée",
+    "explanation": "C'est la valeur centrale de la série ordonnée",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #117"
   },
@@ -1868,7 +1868,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "On prend la dernière valeur de la série",
     "option_d": "On ignore les deux valeurs centrales",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La moyenne des deux valeurs centrales de la série ordonnée",
+    "explanation": "La moyenne des deux valeurs centrales de la série ordonnée",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #118"
   },
@@ -1883,7 +1883,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\frac{\\sum (\\text{valeur} \\times \\text{effectif})}{\\text{effectif total}} $",
     "option_d": "$ \\text{effectif total} \\times \\text{valeur centrale} $",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $ \\frac{\\sum (\\text{valeur} \\times \\text{effectif})}{\\text{effectif total}} $",
+    "explanation": "$ \\frac{\\sum (\\text{valeur} \\times \\text{effectif})}{\\text{effectif total}} $",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #119"
   },
@@ -1898,7 +1898,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$ \\text{effectif cumulé} \\times 100 $",
     "option_d": "$ \\frac{\\text{effectif de la modalité}}{\\text{effectif total}} \\times 100 $",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $ \\frac{\\text{effectif de la modalité}}{\\text{effectif total}} \\times 100 $",
+    "explanation": "$ \\frac{\\text{effectif de la modalité}}{\\text{effectif total}} \\times 100 $",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #120"
   },
@@ -1913,7 +1913,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La valeur la plus élevée de la série",
     "option_d": "La classe modale",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le point où la courbe atteint 50% de l'effectif total",
+    "explanation": "Le point où la courbe atteint 50% de l'effectif total",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #121"
   },
@@ -1928,7 +1928,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La médiane correspond au mode",
     "option_d": "La médiane est la moyenne de toutes les valeurs",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La médiane n'est pas forcément une valeur de la série",
+    "explanation": "La médiane n'est pas forcément une valeur de la série",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #122"
   },
@@ -1943,7 +1943,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Au pourcentage d'individus ayant une valeur inférieure ou égale à une modalité",
     "option_d": "Au nombre total de modalités",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Au pourcentage d'individus ayant une valeur inférieure ou égale à une modalité",
+    "explanation": "Au pourcentage d'individus ayant une valeur inférieure ou égale à une modalité",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #123"
   },
@@ -1958,7 +1958,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La valeur centrale après classement",
     "option_d": "La modalité avec l'effectif le plus élevé",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La modalité avec l'effectif le plus élevé",
+    "explanation": "La modalité avec l'effectif le plus élevé",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #124"
   },
@@ -1973,7 +1973,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La moyenne des valeurs",
     "option_d": "L'étendue des données",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La valeur qui sépare la série en deux groupes de même effectif",
+    "explanation": "La valeur qui sépare la série en deux groupes de même effectif",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #125"
   },
@@ -1988,7 +1988,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "À identifier la classe modale",
     "option_d": "À comparer deux séries statistiques",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : À connaître le nombre total d'individus jusqu'à une modalité donnée",
+    "explanation": "À connaître le nombre total d'individus jusqu'à une modalité donnée",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #126"
   },
@@ -2003,7 +2003,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "C'est la classe avec l'effectif le plus élevé",
     "option_d": "C'est la classe de plus grande amplitude",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : C'est la classe avec l'effectif le plus élevé",
+    "explanation": "C'est la classe avec l'effectif le plus élevé",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #127"
   },
@@ -2018,7 +2018,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Les valeurs extrêmes de la série",
     "option_d": "La répartition des effectifs selon les modalités",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La répartition des effectifs selon les modalités",
+    "explanation": "La répartition des effectifs selon les modalités",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #128"
   },
@@ -2033,7 +2033,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Il indique la dispersion des données",
     "option_d": "Il calcule automatiquement la médiane",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Il montre la progression cumulative des effectifs par modalité",
+    "explanation": "Il montre la progression cumulative des effectifs par modalité",
     "difficulty": "facile",
     "source_reference": "CAFOP Maths — Statistiques #129"
   },
@@ -2048,7 +2048,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$f(x) = a/x + b$",
     "option_d": "$f(x) = |ax| + b$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $f(x) = ax + b$, où a et b sont des nombres réels",
+    "explanation": "$f(x) = ax + b$, où a et b sont des nombres réels",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #130"
   },
@@ -2063,7 +2063,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Lorsque le terme constant b est nul ($f(x) = ax$)",
     "option_d": "Lorsque a = 1",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Lorsque le terme constant b est nul ($f(x) = ax$)",
+    "explanation": "Lorsque le terme constant b est nul ($f(x) = ax$)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #131"
   },
@@ -2078,7 +2078,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La distance entre deux points de la droite",
     "option_d": "La pente de la droite représentant l'application affine",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La pente de la droite représentant l'application affine",
+    "explanation": "La pente de la droite représentant l'application affine",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #132"
   },
@@ -2093,7 +2093,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Elle forme une courbe exponentielle",
     "option_d": "Elle n'a pas d'ordonnée à l'origine",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Elle passe toujours par l'origine du repère",
+    "explanation": "Elle passe toujours par l'origine du repère",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #133"
   },
@@ -2108,7 +2108,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "En traçant obligatoirement la droite",
     "option_d": "En comparant $f(0)$ et $f(1)$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : En analysant le signe du coefficient a",
+    "explanation": "En analysant le signe du coefficient a",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #134"
   },
@@ -2123,7 +2123,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Elle est constante ($f(x) = b$ pour tout x)",
     "option_d": "Elle devient une application linéaire",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Elle est constante ($f(x) = b$ pour tout x)",
+    "explanation": "Elle est constante ($f(x) = b$ pour tout x)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #135"
   },
@@ -2138,7 +2138,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$f(x)$ est toujours supérieure à x",
     "option_d": "$f(kx) = kf(x)$ et $f(x + y) = f(x) + f(y)$",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $f(kx) = kf(x)$ et $f(x + y) = f(x) + f(y)$",
+    "explanation": "$f(kx) = kf(x)$ et $f(x + y) = f(x) + f(y)$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Applications affines #136"
   },
@@ -2153,7 +2153,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Base quelconque + faces triangulaires",
     "option_d": "Base carrée uniquement",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Base polygonale régulière + faces latérales triangulaires isocèles identiques",
+    "explanation": "Base polygonale régulière + faces latérales triangulaires isocèles identiques",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #137"
   },
@@ -2168,7 +2168,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "L'apothème de la base",
     "option_d": "La médiane d'une face",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La hauteur (perpendiculaire à la base passant par le centre)",
+    "explanation": "La hauteur (perpendiculaire à la base passant par le centre)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #138"
   },
@@ -2183,7 +2183,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$A_{\\text{lat}} = \\frac{P \\times a}{2}$ (P = périmètre base, a = apothème)",
     "option_d": "$A_{\\text{lat}} = \\frac{h}{3} \\times P$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $A_{\\text{lat}} = \\frac{P \\times a}{2}$ (P = périmètre base, a = apothème)",
+    "explanation": "$A_{\\text{lat}} = \\frac{P \\times a}{2}$ (P = périmètre base, a = apothème)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #139"
   },
@@ -2198,7 +2198,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Un triangle rectangle",
     "option_d": "Une réduction homothétique de la base",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Une réduction homothétique de la base",
+    "explanation": "Une réduction homothétique de la base",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #140"
   },
@@ -2213,7 +2213,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Translation d'un disque le long d'une droite",
     "option_d": "Déformation d'une pyramide à base circulaire",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Rotation d'un triangle rectangle autour d'un côté de l'angle droit",
+    "explanation": "Rotation d'un triangle rectangle autour d'un côté de l'angle droit",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #141"
   },
@@ -2228,7 +2228,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "La hauteur du cône",
     "option_d": "Le diamètre du disque de base",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'hypoténuse du triangle générateur",
+    "explanation": "L'hypoténuse du triangle générateur",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #142"
   },
@@ -2243,7 +2243,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$g = \\sqrt{r^2 + h^2}$ (théorème de Pythagore)",
     "option_d": "$g = 2\\pi r$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : $g = \\sqrt{r^2 + h^2}$ (théorème de Pythagore)",
+    "explanation": "$g = \\sqrt{r^2 + h^2}$ (théorème de Pythagore)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #143"
   },
@@ -2258,7 +2258,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Un carré concentrique",
     "option_d": "Un cercle réduit homothétique",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un cercle réduit homothétique",
+    "explanation": "Un cercle réduit homothétique",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #144"
   },
@@ -2273,7 +2273,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$A_{\\text{total}} = \\frac{A_{\\text{latérale}}}{B}$",
     "option_d": "$A_{\\text{total}} = A_{\\text{latérale}} - B$",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : $A_{\\text{total}} = A_{\\text{latérale}} + B$",
+    "explanation": "$A_{\\text{total}} = A_{\\text{latérale}} + B$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #145"
   },
@@ -2288,7 +2288,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Rayon du cercle inscrit dans la base",
     "option_d": "Longueur totale des arêtes",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Hauteur d'une face latérale issue du sommet",
+    "explanation": "Hauteur d'une face latérale issue du sommet",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #146"
   },
@@ -2303,7 +2303,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Elle est multipliée par $\\frac{1}{4}$",
     "option_d": "Elle est multipliée par $\\frac{1}{8}$",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Elle est multipliée par $\\frac{1}{4}$",
+    "explanation": "Elle est multipliée par $\\frac{1}{4}$",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #147"
   },
@@ -2318,7 +2318,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$V = \\frac{h}{3} + B$",
     "option_d": "$V = \\frac{B \\times h}{3}$ où $B$ est l'aire de la base",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : $V = \\frac{B \\times h}{3}$ où $B$ est l'aire de la base",
+    "explanation": "$V = \\frac{B \\times h}{3}$ où $B$ est l'aire de la base",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #148"
   },
@@ -2333,7 +2333,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "Au diamètre de la base",
     "option_d": "À l'aire latérale",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Au périmètre de la base ($2\\pi r$)",
+    "explanation": "Au périmètre de la base ($2\\pi r$)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #149"
   },
@@ -2348,7 +2348,7 @@ export function getSeedCafopMaths(): { resource: Resource; topics: Topic[]; ques
     "option_c": "$V = \\frac{4}{3} \\pi r^3$",
     "option_d": "$V = 2\\pi r (r + h)$",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : $V = \\frac{1}{3} \\pi r^2 h$ (r = rayon base, h = hauteur)",
+    "explanation": "$V = \\frac{1}{3} \\pi r^2 h$ (r = rayon base, h = hauteur)",
     "difficulty": "moyen",
     "source_reference": "CAFOP Maths — Pyramides et cônes #150"
   }

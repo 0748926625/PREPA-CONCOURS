@@ -58,7 +58,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "10",
     "option_d": "11",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 11",
+    "explanation": "11",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #1"
   },
@@ -72,7 +72,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "8",
     "option_d": "6",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 7",
+    "explanation": "7",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #2"
   },
@@ -86,7 +86,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "7",
     "option_d": "8",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 6",
+    "explanation": "6",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #3"
   },
@@ -100,7 +100,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "5",
     "option_d": "6",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 5",
+    "explanation": "5",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #4"
   },
@@ -114,7 +114,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Vert, orange, violet",
     "option_d": "Rouge, bleu, jaune",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Rouge, bleu, jaune",
+    "explanation": "Rouge, bleu, jaune",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #5"
   },
@@ -128,7 +128,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "En mélangeant le bleu et le jaune",
     "option_d": "En mélangeant le blanc et le noir",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : En mélangeant le bleu et le jaune",
+    "explanation": "En mélangeant le bleu et le jaune",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #6"
   },
@@ -142,7 +142,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "En mélangeant le jaune et le rouge",
     "option_d": "En mélangeant le rouge et le bleu",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : En mélangeant le jaune et le rouge",
+    "explanation": "En mélangeant le jaune et le rouge",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #7"
   },
@@ -156,7 +156,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "En mélangeant le jaune et le rouge",
     "option_d": "En mélangeant le vert et le bleu",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : En mélangeant le bleu et le rouge",
+    "explanation": "En mélangeant le bleu et le rouge",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #8"
   },
@@ -170,7 +170,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Rouge, blanc, bleu",
     "option_d": "Jaune, vert, blanc",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Orange, blanc, vert",
+    "explanation": "Orange, blanc, vert",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #9"
   },
@@ -184,7 +184,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le sol, la savane du nord",
     "option_d": "La forêt",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le sol, la savane du nord",
+    "explanation": "Le sol, la savane du nord",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #10"
   },
@@ -198,7 +198,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le sol du nord",
     "option_d": "La paix",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'espoir, la forêt",
+    "explanation": "L'espoir, la forêt",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #11"
   },
@@ -212,7 +212,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La paix, la pureté",
     "option_d": "Le sol",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : La paix, la pureté",
+    "explanation": "La paix, la pureté",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #12"
   },
@@ -226,7 +226,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1985",
     "option_d": "2015",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 1992",
+    "explanation": "1992",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #13"
   },
@@ -240,7 +240,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1 fois",
     "option_d": "3 fois",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 3 fois",
+    "explanation": "3 fois",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #14"
   },
@@ -254,7 +254,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Lions",
     "option_d": "Les Éléphants",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Les Éléphants",
+    "explanation": "Les Éléphants",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #15"
   },
@@ -268,7 +268,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Aigles",
     "option_d": "Les Faucons",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Les Lions Indomptables",
+    "explanation": "Les Lions Indomptables",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #16"
   },
@@ -282,7 +282,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Aigles",
     "option_d": "Les Panthères",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Les Lions de la Téranga",
+    "explanation": "Les Lions de la Téranga",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #17"
   },
@@ -296,7 +296,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Éléphants",
     "option_d": "Les Bafana-Bafana",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Les Bafana-Bafana",
+    "explanation": "Les Bafana-Bafana",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #18"
   },
@@ -310,7 +310,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Fennecs",
     "option_d": "Les Lions",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Les Fennecs",
+    "explanation": "Les Fennecs",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #19"
   },
@@ -324,7 +324,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Éléphants",
     "option_d": "Les Aigles",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Les Black Stars",
+    "explanation": "Les Black Stars",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #20"
   },
@@ -338,7 +338,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Didier Drogba",
     "option_d": "Gervinho",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Didier Drogba",
+    "explanation": "Didier Drogba",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #21"
   },
@@ -352,7 +352,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le basket-ball",
     "option_d": "Le judo",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : L'athlétisme",
+    "explanation": "L'athlétisme",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #22"
   },
@@ -366,7 +366,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le judo",
     "option_d": "La natation",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le taekwondo",
+    "explanation": "Le taekwondo",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #23"
   },
@@ -380,7 +380,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le xylophone",
     "option_d": "La flûte",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La guitare",
+    "explanation": "La guitare",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #24"
   },
@@ -394,7 +394,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Instruments à corde",
     "option_d": "Instruments électroniques",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Instruments à vent",
+    "explanation": "Instruments à vent",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #25"
   },
@@ -408,7 +408,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Instruments à vent",
     "option_d": "Instruments à corde",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Instruments à percussion",
+    "explanation": "Instruments à percussion",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #26"
   },
@@ -422,7 +422,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Instruments électroniques",
     "option_d": "Instruments à corde",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Instruments à corde",
+    "explanation": "Instruments à corde",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #27"
   },
@@ -436,7 +436,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Boloye",
     "option_d": "Le Zaouli",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Zagrobi",
+    "explanation": "Le Zagrobi",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #28"
   },
@@ -450,7 +450,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Korhogo",
     "option_d": "Dabou",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Zuénoula",
+    "explanation": "Zuénoula",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #29"
   },
@@ -464,7 +464,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bonoua",
     "option_d": "Dabou",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Béoumi/Bouaké",
+    "explanation": "Béoumi/Bouaké",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #30"
   },
@@ -478,7 +478,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Sénégal",
     "option_d": "RD Congo",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Côte d'Ivoire",
+    "explanation": "Côte d'Ivoire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #31"
   },
@@ -492,7 +492,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Côte d'Ivoire",
     "option_d": "Sénégal",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Cameroun",
+    "explanation": "Cameroun",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #32"
   },
@@ -506,7 +506,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Côte d'Ivoire",
     "option_d": "République Démocratique du Congo",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : République Démocratique du Congo",
+    "explanation": "République Démocratique du Congo",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #33"
   },
@@ -520,7 +520,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Cuba",
     "option_d": "Mexique",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Cuba",
+    "explanation": "Cuba",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #34"
   },
@@ -534,7 +534,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Antilles",
     "option_d": "L'Asie",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Les Antilles",
+    "explanation": "Les Antilles",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #35"
   },
@@ -548,7 +548,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Traoré Abdoulaye",
     "option_d": "N'Guessan Albert",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Seydou Koné",
+    "explanation": "Seydou Koné",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #36"
   },
@@ -562,7 +562,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Traoré Abdoulaye",
     "option_d": "Seydou Koné",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Frédéric Ehui",
+    "explanation": "Frédéric Ehui",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #37"
   },
@@ -576,7 +576,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Dodo",
     "option_d": "Le Zaouli",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Vohou-vohou",
+    "explanation": "Le Vohou-vohou",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #38"
   },
@@ -590,7 +590,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Jeux de la Francophonie",
     "option_d": "Les Jeux Olympiques modernes",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Les Jeux Olympiques modernes",
+    "explanation": "Les Jeux Olympiques modernes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #39"
   },
@@ -604,7 +604,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "6",
     "option_d": "5",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 5",
+    "explanation": "5",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #40"
   },
@@ -618,7 +618,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1896",
     "option_d": "1900",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 1896",
+    "explanation": "1896",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #41"
   },
@@ -632,7 +632,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Chine (Pékin)",
     "option_d": "Brésil (Rio)",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Japon (Tokyo)",
+    "explanation": "Japon (Tokyo)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #42"
   },
@@ -646,7 +646,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "France (Paris)",
     "option_d": "Japon (Tokyo)",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : France (Paris)",
+    "explanation": "France (Paris)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #43"
   },
@@ -660,7 +660,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Salon International de l'Art d'Ouagadougou",
     "option_d": "Salon Ivoirien des Artisans d'Ouest",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Salon International de l'Artisanat de Ouagadougou",
+    "explanation": "Salon International de l'Artisanat de Ouagadougou",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #44"
   },
@@ -674,7 +674,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le basket-ball",
     "option_d": "Le football",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le rugby",
+    "explanation": "Le rugby",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #45"
   },
@@ -688,7 +688,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "5 points",
     "option_d": "7 points",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 5 points",
+    "explanation": "5 points",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #46"
   },
@@ -702,7 +702,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "3 points",
     "option_d": "5 points",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 3 points",
+    "explanation": "3 points",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #47"
   },
@@ -716,7 +716,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Chanter en solfège",
     "option_d": "Chanter en chœur",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Chanter a cappella",
+    "explanation": "Chanter a cappella",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #48"
   },
@@ -730,7 +730,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le blanc et le noir",
     "option_d": "Le bleu et le vert",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le jaune et le rouge-violet",
+    "explanation": "Le jaune et le rouge-violet",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #49"
   },
@@ -744,7 +744,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le jaune et le rouge",
     "option_d": "Le vert et le violet",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le vert et le violet",
+    "explanation": "Le vert et le violet",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #50"
   },
@@ -758,7 +758,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Sanza",
     "option_d": "La Kora",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La Kora",
+    "explanation": "La Kora",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #51"
   },
@@ -772,7 +772,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Dodo",
     "option_d": "La Sanza",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La Sanza",
+    "explanation": "La Sanza",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #52"
   },
@@ -786,7 +786,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les instruments électroniques",
     "option_d": "Les instruments à vent",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Les instruments à percussion",
+    "explanation": "Les instruments à percussion",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #53"
   },
@@ -800,7 +800,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un tournoi olympique",
     "option_d": "Un tournoi scolaire",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La compétition continentale de football masculin africain",
+    "explanation": "La compétition continentale de football masculin africain",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #54"
   },
@@ -814,7 +814,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Croatie",
     "option_d": "L'Allemagne",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La France",
+    "explanation": "La France",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #55"
   },
@@ -828,7 +828,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Brésil",
     "option_d": "La France",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'Argentine",
+    "explanation": "L'Argentine",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #56"
   },
@@ -842,7 +842,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Côte d'Ivoire",
     "option_d": "Sénégal",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : République Démocratique du Congo (Kinshasa)",
+    "explanation": "République Démocratique du Congo (Kinshasa)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #57"
   },
@@ -856,7 +856,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Dakar (Sénégal)",
     "option_d": "Bamako (Mali)",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Ouagadougou (Burkina Faso)",
+    "explanation": "Ouagadougou (Burkina Faso)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #58"
   },
@@ -870,7 +870,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le tambour seul",
     "option_d": "La flûte et la trompette",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La flûte et la trompette",
+    "explanation": "La flûte et la trompette",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #59"
   },
@@ -884,7 +884,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Instruments électroniques",
     "option_d": "Instruments à percussion",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Instruments à percussion",
+    "explanation": "Instruments à percussion",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Arts, culture et sport #60"
   },
@@ -898,7 +898,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Camara Laye",
     "option_d": "Amadou Hampâté Bâ",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Bernard Dadié",
+    "explanation": "Bernard Dadié",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #61"
   },
@@ -912,7 +912,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Birago Diop",
     "option_d": "Bernard Dadié",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Ahmadou Kourouma",
+    "explanation": "Ahmadou Kourouma",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #62"
   },
@@ -926,7 +926,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Camara Laye",
     "option_d": "Bernard Dadié",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Camara Laye",
+    "explanation": "Camara Laye",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #63"
   },
@@ -940,7 +940,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Sénégalaise",
     "option_d": "Guinéenne",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Ivoirienne",
+    "explanation": "Ivoirienne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #64"
   },
@@ -954,7 +954,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Birago Diop",
     "option_d": "Ahmadou Kourouma",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Birago Diop",
+    "explanation": "Birago Diop",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #65"
   },
@@ -968,7 +968,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Sénégal",
     "option_d": "Le Mali",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Sénégal",
+    "explanation": "Le Sénégal",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #66"
   },
@@ -982,7 +982,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le surréalisme",
     "option_d": "Le romantisme",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La négritude",
+    "explanation": "La négritude",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #67"
   },
@@ -996,7 +996,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Amadou Koné",
     "option_d": "Chinua Achebe",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Bernard Dadié",
+    "explanation": "Bernard Dadié",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #68"
   },
@@ -1010,7 +1010,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Amadou Koné",
     "option_d": "Chinua Achebe",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Amadou Koné",
+    "explanation": "Amadou Koné",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #69"
   },
@@ -1024,7 +1024,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bernard Dadié",
     "option_d": "Wolé Soyinka",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Chinua Achebe",
+    "explanation": "Chinua Achebe",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #70"
   },
@@ -1038,7 +1038,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Nigériane",
     "option_d": "Ivoirienne",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Nigériane",
+    "explanation": "Nigériane",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #71"
   },
@@ -1052,7 +1052,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Nigériane",
     "option_d": "Ghanéenne",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Nigériane",
+    "explanation": "Nigériane",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #72"
   },
@@ -1066,7 +1066,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Ahmadou Kourouma",
     "option_d": "Henri Lopes",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Seydou Badian",
+    "explanation": "Seydou Badian",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #73"
   },
@@ -1080,7 +1080,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bernard Dadié",
     "option_d": "Amadou Koné",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Henri Lopes",
+    "explanation": "Henri Lopes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #74"
   },
@@ -1094,7 +1094,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Ivoirienne",
     "option_d": "Congolaise",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Congolaise",
+    "explanation": "Congolaise",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #75"
   },
@@ -1108,7 +1108,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Amadou Koné",
     "option_d": "Ahmadou Kourouma",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Jean-Marie Adiaffi",
+    "explanation": "Jean-Marie Adiaffi",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #76"
   },
@@ -1122,7 +1122,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Malienne",
     "option_d": "Ivoirienne",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Ivoirienne",
+    "explanation": "Ivoirienne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #77"
   },
@@ -1136,7 +1136,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Chinua Achebe",
     "option_d": "Bernard Dadié",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Ferdinand Oyono",
+    "explanation": "Ferdinand Oyono",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #78"
   },
@@ -1150,7 +1150,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Nigériane",
     "option_d": "Sénégalaise",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Camerounaise",
+    "explanation": "Camerounaise",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #79"
   },
@@ -1164,7 +1164,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Henri Lopes",
     "option_d": "Sembène Ousmane",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Sembène Ousmane",
+    "explanation": "Sembène Ousmane",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #80"
   },
@@ -1178,7 +1178,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Sénégalaise",
     "option_d": "Camerounaise",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Sénégalaise",
+    "explanation": "Sénégalaise",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #81"
   },
@@ -1192,7 +1192,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bernard Dadié",
     "option_d": "Amadou Hampâté Bâ",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Amadou Hampâté Bâ",
+    "explanation": "Amadou Hampâté Bâ",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #82"
   },
@@ -1206,7 +1206,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Côte d'Ivoire",
     "option_d": "Mali",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Mali",
+    "explanation": "Mali",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #83"
   },
@@ -1220,7 +1220,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Ahmadou Kourouma",
     "option_d": "Aké Loba",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Maurice Bandama",
+    "explanation": "Maurice Bandama",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #84"
   },
@@ -1234,7 +1234,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bernard Dadié",
     "option_d": "Ahmadou Kourouma",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Aké Loba",
+    "explanation": "Aké Loba",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #85"
   },
@@ -1248,7 +1248,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Sénégal",
     "option_d": "Le Mali",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La Côte d'Ivoire",
+    "explanation": "La Côte d'Ivoire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #86"
   },
@@ -1262,7 +1262,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un décasyllabe",
     "option_d": "Un octosyllabe",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un octosyllabe",
+    "explanation": "Un octosyllabe",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #87"
   },
@@ -1276,7 +1276,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un décasyllabe",
     "option_d": "Un tercet",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Un décasyllabe",
+    "explanation": "Un décasyllabe",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #88"
   },
@@ -1290,7 +1290,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un quatrain",
     "option_d": "Un alexandrin",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un alexandrin",
+    "explanation": "Un alexandrin",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #89"
   },
@@ -1304,7 +1304,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un pentasyllabe",
     "option_d": "Un décasyllabe",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Un pentasyllabe",
+    "explanation": "Un pentasyllabe",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #90"
   },
@@ -1318,7 +1318,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un tercet",
     "option_d": "Un distique",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un quatrain",
+    "explanation": "Un quatrain",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #91"
   },
@@ -1332,7 +1332,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un quatrain",
     "option_d": "Un tercet",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un tercet",
+    "explanation": "Un tercet",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #92"
   },
@@ -1346,7 +1346,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un quatrain",
     "option_d": "Un tercet",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un distique",
+    "explanation": "Un distique",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #93"
   },
@@ -1360,7 +1360,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La strophe",
     "option_d": "Le vers",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le refrain",
+    "explanation": "Le refrain",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #94"
   },
@@ -1374,7 +1374,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Des rimes libres",
     "option_d": "Des rimes embrassées",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Des rimes plates",
+    "explanation": "Des rimes plates",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #95"
   },
@@ -1388,7 +1388,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Des rimes plates",
     "option_d": "Des rimes libres",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Des rimes croisées",
+    "explanation": "Des rimes croisées",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #96"
   },
@@ -1402,7 +1402,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Des rimes croisées",
     "option_d": "Des rimes embrassées",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Des rimes embrassées",
+    "explanation": "Des rimes embrassées",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #97"
   },
@@ -1416,7 +1416,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un très long roman",
     "option_d": "Un court récit",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un court récit",
+    "explanation": "Un court récit",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #98"
   },
@@ -1430,7 +1430,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un article de presse",
     "option_d": "Une pièce de théâtre",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Un récit long en prose racontant une histoire imaginaire",
+    "explanation": "Un récit long en prose racontant une histoire imaginaire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #99"
   },
@@ -1444,7 +1444,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un poème court",
     "option_d": "Un article scientifique",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un récit imaginaire, souvent merveilleux, transmis oralement ou par écrit",
+    "explanation": "Un récit imaginaire, souvent merveilleux, transmis oralement ou par écrit",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #100"
   },
@@ -1458,7 +1458,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un conte",
     "option_d": "Une pièce de théâtre",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Une pièce de théâtre",
+    "explanation": "Une pièce de théâtre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #101"
   },
@@ -1472,7 +1472,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le poète",
     "option_d": "Le romancier",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le dramaturge",
+    "explanation": "Le dramaturge",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #102"
   },
@@ -1486,7 +1486,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Société Internationale de Littérature Africaine",
     "option_d": "Salon International du Livre d'Abidjan",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Salon International du Livre d'Abidjan",
+    "explanation": "Salon International du Livre d'Abidjan",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #103"
   },
@@ -1500,7 +1500,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un mot qui rime avec un autre",
     "option_d": "Un mot qui se prononce comme un autre mais a un sens différent",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un mot qui se prononce comme un autre mais a un sens différent",
+    "explanation": "Un mot qui se prononce comme un autre mais a un sens différent",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #104"
   },
@@ -1514,7 +1514,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un mot inventé",
     "option_d": "Un mot qui se prononce pareil",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un mot de sens identique ou proche d'un autre",
+    "explanation": "Un mot de sens identique ou proche d'un autre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #105"
   },
@@ -1528,7 +1528,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un mot de sens identique",
     "option_d": "Un mot de sens opposé à un autre",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un mot de sens opposé à un autre",
+    "explanation": "Un mot de sens opposé à un autre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #106"
   },
@@ -1542,7 +1542,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Synonymes",
     "option_d": "Homonymes",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Contraires (antonymes)",
+    "explanation": "Contraires (antonymes)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #107"
   },
@@ -1556,7 +1556,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Synonymes",
     "option_d": "Sans rapport",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Synonymes",
+    "explanation": "Synonymes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #108"
   },
@@ -1570,7 +1570,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Homonymes",
     "option_d": "Synonymes",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Homonymes",
+    "explanation": "Homonymes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #109"
   },
@@ -1584,7 +1584,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'incipit uniquement",
     "option_d": "Le prologue",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le prologue",
+    "explanation": "Le prologue",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #110"
   },
@@ -1598,7 +1598,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'épilogue",
     "option_d": "L'incipit",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : L'épilogue",
+    "explanation": "L'épilogue",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #111"
   },
@@ -1612,7 +1612,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un recueil de poèmes",
     "option_d": "Le récit de la vie d'un auteur écrit par lui-même",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le récit de la vie d'un auteur écrit par lui-même",
+    "explanation": "Le récit de la vie d'un auteur écrit par lui-même",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #112"
   },
@@ -1626,7 +1626,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le récit de sa propre vie",
     "option_d": "Une pièce de théâtre",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le récit de la vie de quelqu'un écrit par un autre",
+    "explanation": "Le récit de la vie de quelqu'un écrit par un autre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #113"
   },
@@ -1640,7 +1640,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Ivoirienne",
     "option_d": "Sénégalaise",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Ivoirienne",
+    "explanation": "Ivoirienne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #114"
   },
@@ -1654,7 +1654,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Sénégalaise",
     "option_d": "Malienne",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Ivoirienne",
+    "explanation": "Ivoirienne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #115"
   },
@@ -1668,7 +1668,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bernard Dadié",
     "option_d": "Léopold Sédar Senghor",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Aimé Césaire",
+    "explanation": "Aimé Césaire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #116"
   },
@@ -1682,7 +1682,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Afrique centrale",
     "option_d": "La Martinique (Antilles)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La Martinique (Antilles)",
+    "explanation": "La Martinique (Antilles)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #117"
   },
@@ -1696,7 +1696,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Toujours l'auteur lui-même",
     "option_d": "Un narrateur absent du récit",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Un narrateur qui connaît tout, y compris les pensées des personnages",
+    "explanation": "Un narrateur qui connaît tout, y compris les pensées des personnages",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #118"
   },
@@ -1710,7 +1710,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une pièce de théâtre",
     "option_d": "Un roman long",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Un court récit avec une morale, souvent avec des animaux",
+    "explanation": "Un court récit avec une morale, souvent avec des animaux",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #119"
   },
@@ -1724,7 +1724,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Molière",
     "option_d": "Voltaire",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Jean de La Fontaine",
+    "explanation": "Jean de La Fontaine",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Littérature #120"
   },
@@ -1738,7 +1738,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1893",
     "option_d": "1958",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 1960",
+    "explanation": "1960",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #121"
   },
@@ -1752,7 +1752,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le 7 août 1960",
     "option_d": "Le 10 mars 1893",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le 7 août 1960",
+    "explanation": "Le 7 août 1960",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #122"
   },
@@ -1766,7 +1766,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1960",
     "option_d": "1946",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 1893",
+    "explanation": "1893",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #123"
   },
@@ -1780,7 +1780,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Laurent Gbagbo",
     "option_d": "Alassane Ouattara",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Félix Houphouët-Boigny",
+    "explanation": "Félix Houphouët-Boigny",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #124"
   },
@@ -1794,7 +1794,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1993",
     "option_d": "1990",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 1993",
+    "explanation": "1993",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #125"
   },
@@ -1808,7 +1808,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Yamoussoukro",
     "option_d": "Bingerville",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Grand-Bassam",
+    "explanation": "Grand-Bassam",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #126"
   },
@@ -1822,7 +1822,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1960",
     "option_d": "1983",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 1933",
+    "explanation": "1933",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #127"
   },
@@ -1836,7 +1836,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1960",
     "option_d": "1983",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 1983",
+    "explanation": "1983",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #128"
   },
@@ -1850,7 +1850,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une centaine",
     "option_d": "Plusieurs milliers (environ 6 000 à l'origine)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Plusieurs milliers (environ 6 000 à l'origine)",
+    "explanation": "Plusieurs milliers (environ 6 000 à l'origine)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #129"
   },
@@ -1864,7 +1864,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le déclenchement de la crise politico-militaire",
     "option_d": "La fin de la première République",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le déclenchement de la crise politico-militaire",
+    "explanation": "Le déclenchement de la crise politico-militaire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #130"
   },
@@ -1878,7 +1878,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La fin du multipartisme",
     "option_d": "Le décès du président Félix Houphouët-Boigny",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le décès du président Félix Houphouët-Boigny",
+    "explanation": "Le décès du président Félix Houphouët-Boigny",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #131"
   },
@@ -1892,7 +1892,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La création de la CEDEAO",
     "option_d": "Le décès d'Houphouët-Boigny",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'avènement du multipartisme",
+    "explanation": "L'avènement du multipartisme",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #132"
   },
@@ -1906,7 +1906,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'indépendance totale du pays",
     "option_d": "L'avènement du multipartisme",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La proclamation de la République de Côte d'Ivoire",
+    "explanation": "La proclamation de la République de Côte d'Ivoire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #133"
   },
@@ -1920,7 +1920,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Rhodésie",
     "option_d": "La Gold Coast (Côte-de-l'Or)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La Gold Coast (Côte-de-l'Or)",
+    "explanation": "La Gold Coast (Côte-de-l'Or)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #134"
   },
@@ -1934,7 +1934,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Gold Coast",
     "option_d": "La Rhodésie",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La Haute-Volta",
+    "explanation": "La Haute-Volta",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #135"
   },
@@ -1948,7 +1948,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Zaïre",
     "option_d": "La Rhodésie",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Zaïre",
+    "explanation": "Le Zaïre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #136"
   },
@@ -1962,7 +1962,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Bechuanaland",
     "option_d": "La Rhodésie du Nord",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La Rhodésie du Sud",
+    "explanation": "La Rhodésie du Sud",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #137"
   },
@@ -1976,7 +1976,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Rhodésie du Sud",
     "option_d": "Le Nyassaland",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La Rhodésie du Nord",
+    "explanation": "La Rhodésie du Nord",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #138"
   },
@@ -1990,7 +1990,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La période qui précède l'apparition de l'écriture",
     "option_d": "La période coloniale",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : La période qui précède l'apparition de l'écriture",
+    "explanation": "La période qui précède l'apparition de l'écriture",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #139"
   },
@@ -2004,7 +2004,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Préhistoire et Antiquité seulement",
     "option_d": "Antiquité et Époque contemporaine seulement",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Préhistoire, Antiquité, Moyen Âge, Époque moderne, Époque contemporaine",
+    "explanation": "Préhistoire, Antiquité, Moyen Âge, Époque moderne, Époque contemporaine",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #140"
   },
@@ -2018,7 +2018,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1450",
     "option_d": "1500",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : 1492",
+    "explanation": "1492",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #141"
   },
@@ -2032,7 +2032,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Magellan",
     "option_d": "Arthur Verdier",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Louis-Gustave Binger",
+    "explanation": "Louis-Gustave Binger",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #142"
   },
@@ -2046,7 +2046,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un pionnier du commerce colonial (café)",
     "option_d": "Un président de la République",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Un pionnier du commerce colonial (café)",
+    "explanation": "Un pionnier du commerce colonial (café)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #143"
   },
@@ -2060,7 +2060,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1958",
     "option_d": "1960",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 1960",
+    "explanation": "1960",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #144"
   },
@@ -2074,7 +2074,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1958",
     "option_d": "1965",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : 1960",
+    "explanation": "1960",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #145"
   },
@@ -2088,7 +2088,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1975",
     "option_d": "1958",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : 1960",
+    "explanation": "1960",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #146"
   },
@@ -2102,7 +2102,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une plus grande autonomie administrative locale",
     "option_d": "L'indépendance immédiate",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Une plus grande autonomie administrative locale",
+    "explanation": "Une plus grande autonomie administrative locale",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #147"
   },
@@ -2116,7 +2116,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Boutros Boutros-Ghali (Égypte)",
     "option_d": "Ban Ki-moon (Corée du Sud)",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Boutros Boutros-Ghali (Égypte)",
+    "explanation": "Boutros Boutros-Ghali (Égypte)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #148"
   },
@@ -2130,7 +2130,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Égypte",
     "option_d": "Le Sénégal",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Ghana",
+    "explanation": "Le Ghana",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #149"
   },
@@ -2144,7 +2144,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Organisation Nationale Unifiée",
     "option_d": "Organisation des Nations Unies",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Organisation des Nations Unies",
+    "explanation": "Organisation des Nations Unies",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #150"
   },
@@ -2158,7 +2158,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1945",
     "option_d": "1950",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 1945",
+    "explanation": "1945",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #151"
   },
@@ -2172,7 +2172,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Union Atlantique",
     "option_d": "Union Asiatique",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Union Africaine",
+    "explanation": "Union Africaine",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #152"
   },
@@ -2186,7 +2186,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Organisation de l'Unité Africaine (OUA)",
     "option_d": "L'UEMOA",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : L'Organisation de l'Unité Africaine (OUA)",
+    "explanation": "L'Organisation de l'Unité Africaine (OUA)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #153"
   },
@@ -2200,7 +2200,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Communauté Européenne des États Africains de l'Ouest",
     "option_d": "Communauté Économique des États de l'Afrique de l'Ouest",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Communauté Économique des États de l'Afrique de l'Ouest",
+    "explanation": "Communauté Économique des États de l'Afrique de l'Ouest",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #154"
   },
@@ -2214,7 +2214,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Union des États Monétaires Africains",
     "option_d": "Union Économique Mondiale Africaine",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Union Économique et Monétaire Ouest Africaine",
+    "explanation": "Union Économique et Monétaire Ouest Africaine",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #155"
   },
@@ -2228,7 +2228,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Togo et le Bénin",
     "option_d": "Le Sénégal et le Mali",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Nigeria et le Ghana",
+    "explanation": "Le Nigeria et le Ghana",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #156"
   },
@@ -2242,7 +2242,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Fédération Mondiale de l'Industrie",
     "option_d": "Forum Mondial International",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Fonds Monétaire International",
+    "explanation": "Fonds Monétaire International",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #157"
   },
@@ -2256,7 +2256,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Programme Africain Mondial",
     "option_d": "Programme d'Assistance Médicale",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Programme Alimentaire Mondial",
+    "explanation": "Programme Alimentaire Mondial",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #158"
   },
@@ -2270,7 +2270,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Nations Économiques pour l'Afrique et le Développement",
     "option_d": "Nation Européenne pour l'Afrique et le Développement",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Nouveau Partenariat pour le Développement de l'Afrique",
+    "explanation": "Nouveau Partenariat pour le Développement de l'Afrique",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #159"
   },
@@ -2284,7 +2284,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Conseil Économique Ivoirien",
     "option_d": "Le Centre Électoral International",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La Commission Électorale Indépendante",
+    "explanation": "La Commission Électorale Indépendante",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #160"
   },
@@ -2298,7 +2298,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Comité National de Désarmement, de Démobilisation et de Réintégration",
     "option_d": "Le Conseil National des Droits de l'Homme",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Comité National de Désarmement, de Démobilisation et de Réintégration",
+    "explanation": "Le Comité National de Désarmement, de Démobilisation et de Réintégration",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #161"
   },
@@ -2312,7 +2312,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Chaka Zoulou",
     "option_d": "Askia Mohamed",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Samory Touré",
+    "explanation": "Samory Touré",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #162"
   },
@@ -2326,7 +2326,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une dynastie égyptienne",
     "option_d": "Une organisation moderne",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un mouvement religieux et militaire berbère ayant envahi l'Afrique de l'Ouest",
+    "explanation": "Un mouvement religieux et militaire berbère ayant envahi l'Afrique de l'Ouest",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #163"
   },
@@ -2340,7 +2340,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'empire du Mali",
     "option_d": "L'empire du Ghana",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : L'empire du Ghana",
+    "explanation": "L'empire du Ghana",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #164"
   },
@@ -2354,7 +2354,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'empire du Ghana",
     "option_d": "L'empire de Kanem-Bornou",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'empire du Mali",
+    "explanation": "L'empire du Mali",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #165"
   },
@@ -2368,7 +2368,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'empire Songhaï",
     "option_d": "L'empire du Mali",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : L'empire Songhaï",
+    "explanation": "L'empire Songhaï",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #166"
   },
@@ -2382,7 +2382,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Côte d'Ivoire",
     "option_d": "Le Sénégal",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Mali",
+    "explanation": "Le Mali",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #167"
   },
@@ -2396,7 +2396,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Au VIe siècle",
     "option_d": "Au VIIIe siècle",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 675 correspond au VIIe siècle",
+    "explanation": "675 correspond au VIIe siècle",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #168"
   },
@@ -2410,7 +2410,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le XIIe siècle",
     "option_d": "Le XIVe siècle",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le XIIIe siècle",
+    "explanation": "Le XIIIe siècle",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #169"
   },
@@ -2424,7 +2424,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le XIIIe siècle",
     "option_d": "Le Xe siècle",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le XIIe siècle",
+    "explanation": "Le XIIe siècle",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #170"
   },
@@ -2438,7 +2438,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le XIXe siècle",
     "option_d": "Le XXe siècle",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le XIXe siècle",
+    "explanation": "Le XIXe siècle",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #171"
   },
@@ -2452,7 +2452,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Avril 1990",
     "option_d": "Octobre 2000",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Juillet 2000",
+    "explanation": "Juillet 2000",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #172"
   },
@@ -2466,7 +2466,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1994",
     "option_d": "1980",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 1994",
+    "explanation": "1994",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #173"
   },
@@ -2480,7 +2480,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Environ 27 ans",
     "option_d": "Environ 10 ans",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Environ 27 ans",
+    "explanation": "Environ 27 ans",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #174"
   },
@@ -2494,7 +2494,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La CEDEAO",
     "option_d": "L'Union Africaine",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : La CEDEAO",
+    "explanation": "La CEDEAO",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #175"
   },
@@ -2508,7 +2508,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1918",
     "option_d": "1950",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 1945",
+    "explanation": "1945",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #176"
   },
@@ -2522,7 +2522,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1918",
     "option_d": "1914",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 1918",
+    "explanation": "1918",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #177"
   },
@@ -2536,7 +2536,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La Chine et le Japon",
     "option_d": "La France et l'Allemagne",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Les États-Unis et l'URSS",
+    "explanation": "Les États-Unis et l'URSS",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #178"
   },
@@ -2550,7 +2550,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les années 1960",
     "option_d": "Les années 2000",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Les années 1980 (1989)",
+    "explanation": "Les années 1980 (1989)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #179"
   },
@@ -2564,7 +2564,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Éthiopie",
     "option_d": "Le Kenya",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : L'Afrique du Sud",
+    "explanation": "L'Afrique du Sud",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Histoire #180"
   },
@@ -2578,7 +2578,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "31 régions",
     "option_d": "14 régions",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : 31 régions",
+    "explanation": "31 régions",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #181"
   },
@@ -2592,7 +2592,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "1 district",
     "option_d": "2 districts (Abidjan et Yamoussoukro)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 2 districts (Abidjan et Yamoussoukro)",
+    "explanation": "2 districts (Abidjan et Yamoussoukro)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #182"
   },
@@ -2606,7 +2606,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Abidjan et Yamoussoukro",
     "option_d": "San-Pedro et Man",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Abidjan et Yamoussoukro",
+    "explanation": "Abidjan et Yamoussoukro",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #183"
   },
@@ -2620,7 +2620,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Sassandra",
     "option_d": "Le Bandama",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La Comoé",
+    "explanation": "La Comoé",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #184"
   },
@@ -2634,7 +2634,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Cavally",
     "option_d": "Le Bandama",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Cavally",
+    "explanation": "Le Cavally",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #185"
   },
@@ -2648,7 +2648,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Bandama",
     "option_d": "La Comoé",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Bandama",
+    "explanation": "Le Bandama",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #186"
   },
@@ -2662,7 +2662,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Cavally, Sassandra, Bandama, Comoé",
     "option_d": "Bandama, Comoé, Cavally, Sassandra",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Comoé, Bandama, Sassandra, Cavally",
+    "explanation": "Comoé, Bandama, Sassandra, Cavally",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #187"
   },
@@ -2676,7 +2676,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Bouaké",
     "option_d": "Abidjan",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Yamoussoukro",
+    "explanation": "Yamoussoukro",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #188"
   },
@@ -2690,7 +2690,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "San-Pedro",
     "option_d": "Bouaké",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Abidjan",
+    "explanation": "Abidjan",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #189"
   },
@@ -2704,7 +2704,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Daloa",
     "option_d": "Korhogo",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Bouaké",
+    "explanation": "Bouaké",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #190"
   },
@@ -2718,7 +2718,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Bafing",
     "option_d": "Les Lacs",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Haut-Sassandra",
+    "explanation": "Le Haut-Sassandra",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #191"
   },
@@ -2732,7 +2732,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Haut-Sassandra",
     "option_d": "Le Zanzan",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Bafing",
+    "explanation": "Le Bafing",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #192"
   },
@@ -2746,7 +2746,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Zanzan",
     "option_d": "Le Denguélé",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Zanzan",
+    "explanation": "Le Zanzan",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #193"
   },
@@ -2760,7 +2760,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Bafing",
     "option_d": "Le Moyen-Cavally",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Denguélé",
+    "explanation": "Le Denguélé",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #194"
   },
@@ -2774,7 +2774,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les Montagnes",
     "option_d": "Le Moyen-Cavally",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Les Montagnes",
+    "explanation": "Les Montagnes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #195"
   },
@@ -2788,7 +2788,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Denguélé",
     "option_d": "Le Bafing",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Moyen-Cavally (Cavally)",
+    "explanation": "Le Moyen-Cavally (Cavally)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #196"
   },
@@ -2802,7 +2802,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Bas-Sassandra",
     "option_d": "Le Moyen-Cavally",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Bas-Sassandra",
+    "explanation": "Le Bas-Sassandra",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #197"
   },
@@ -2816,7 +2816,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le climat attiéen (climat équatorial/de forêt)",
     "option_d": "Le climat désertique",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le climat attiéen (climat équatorial/de forêt)",
+    "explanation": "Le climat attiéen (climat équatorial/de forêt)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #198"
   },
@@ -2830,7 +2830,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le climat de montagne",
     "option_d": "Le climat méditerranéen",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le climat soudanais (tropical de savane)",
+    "explanation": "Le climat soudanais (tropical de savane)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #199"
   },
@@ -2844,7 +2844,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le climat équatorial pur",
     "option_d": "Le climat de montagne",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le climat baouléen (transition)",
+    "explanation": "Le climat baouléen (transition)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #200"
   },
@@ -2858,7 +2858,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le climat soudanais",
     "option_d": "Le climat attiéen",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le climat de montagne",
+    "explanation": "Le climat de montagne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #201"
   },
@@ -2872,7 +2872,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le mistral",
     "option_d": "La mousson",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La mousson",
+    "explanation": "La mousson",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #202"
   },
@@ -2886,7 +2886,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le sirocco",
     "option_d": "Le mistral",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : L'harmattan",
+    "explanation": "L'harmattan",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #203"
   },
@@ -2900,7 +2900,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le coton",
     "option_d": "Le cacao",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le cacao",
+    "explanation": "Le cacao",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #204"
   },
@@ -2914,7 +2914,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le 3e rang mondial",
     "option_d": "Le 1er rang mondial",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le 1er rang mondial",
+    "explanation": "Le 1er rang mondial",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #205"
   },
@@ -2928,7 +2928,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Parc d'Abokouamékro",
     "option_d": "Le Parc national de la Comoé",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Parc national de Taï",
+    "explanation": "Le Parc national de Taï",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #206"
   },
@@ -2942,7 +2942,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Sud-Est",
     "option_d": "Le Sud-Ouest",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Nord-Est",
+    "explanation": "Le Nord-Est",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #207"
   },
@@ -2956,7 +2956,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Ouest montagneux",
     "option_d": "Le Nord",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La région des Lagunes (Abidjan)",
+    "explanation": "La région des Lagunes (Abidjan)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #208"
   },
@@ -2970,7 +2970,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Mont Péko",
     "option_d": "Le Mont Sangbé",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Mont Nimba",
+    "explanation": "Le Mont Nimba",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #209"
   },
@@ -2984,7 +2984,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La région des Montagnes (Ouest)",
     "option_d": "Le Nord",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : La région des Montagnes (Ouest)",
+    "explanation": "La région des Montagnes (Ouest)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #210"
   },
@@ -2998,7 +2998,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La lagune Ébrié",
     "option_d": "La lagune Aby",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : La lagune Ébrié",
+    "explanation": "La lagune Ébrié",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #211"
   },
@@ -3012,7 +3012,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Sud",
     "option_d": "Le Nord",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le Nord",
+    "explanation": "Le Nord",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #212"
   },
@@ -3026,7 +3026,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Centre",
     "option_d": "Le Nord",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Centre",
+    "explanation": "Le Centre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #213"
   },
@@ -3040,7 +3040,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Ouest",
     "option_d": "Le Sud lagunaire",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : L'Ouest",
+    "explanation": "L'Ouest",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #214"
   },
@@ -3054,7 +3054,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Oui, un peuple lagunaire",
     "option_d": "Non, un peuple du Nord",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Oui, un peuple lagunaire",
+    "explanation": "Oui, un peuple lagunaire",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #215"
   },
@@ -3068,7 +3068,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'exploitation minière uniquement",
     "option_d": "L'élevage nomade uniquement",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'agriculture et la pêche",
+    "explanation": "L'agriculture et la pêche",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #216"
   },
@@ -3082,7 +3082,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Korhogo",
     "option_d": "San-Pedro",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Bouaké",
+    "explanation": "Bouaké",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #217"
   },
@@ -3096,7 +3096,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La sculpture sur bois",
     "option_d": "La peinture sur toile (Katiola/Korhogo)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : La peinture sur toile (Katiola/Korhogo)",
+    "explanation": "La peinture sur toile (Katiola/Korhogo)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #218"
   },
@@ -3110,7 +3110,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Zambèze",
     "option_d": "Le Niger",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Nil",
+    "explanation": "Le Nil",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #219"
   },
@@ -3124,7 +3124,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Niger",
     "option_d": "Le Sénégal",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le fleuve Congo",
+    "explanation": "Le fleuve Congo",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #220"
   },
@@ -3138,7 +3138,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le désert de Gobi et le Sahara",
     "option_d": "Le Sahara seulement",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le Sahara et le Kalahari",
+    "explanation": "Le Sahara et le Kalahari",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #221"
   },
@@ -3152,7 +3152,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Kalahari",
     "option_d": "Le Sahara",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le Sahara",
+    "explanation": "Le Sahara",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #222"
   },
@@ -3166,7 +3166,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les fuseaux",
     "option_d": "Les parallèles",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Les parallèles",
+    "explanation": "Les parallèles",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #223"
   },
@@ -3180,7 +3180,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les parallèles",
     "option_d": "Les tropiques",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Les méridiens",
+    "explanation": "Les méridiens",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #224"
   },
@@ -3194,7 +3194,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La translation",
     "option_d": "La révolution",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La rotation",
+    "explanation": "La rotation",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #225"
   },
@@ -3208,7 +3208,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "D'Est en Ouest",
     "option_d": "D'Ouest en Est",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : D'Ouest en Est",
+    "explanation": "D'Ouest en Est",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #226"
   },
@@ -3222,7 +3222,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La révolution",
     "option_d": "La rotation",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : La révolution",
+    "explanation": "La révolution",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #227"
   },
@@ -3236,7 +3236,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Environ 30 jours",
     "option_d": "Environ 24 heures",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Environ 365 jours (1 an)",
+    "explanation": "Environ 365 jours (1 an)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #228"
   },
@@ -3250,7 +3250,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Environ 1 milliard de km",
     "option_d": "Environ 1 million de km",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Environ 150 millions de km",
+    "explanation": "Environ 150 millions de km",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #229"
   },
@@ -3264,7 +3264,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "7 planètes",
     "option_d": "10 planètes",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : 8 planètes",
+    "explanation": "8 planètes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #230"
   },
@@ -3278,7 +3278,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La girouette",
     "option_d": "Le thermomètre",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'anémomètre",
+    "explanation": "L'anémomètre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #231"
   },
@@ -3292,7 +3292,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'hygromètre",
     "option_d": "Le baromètre",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : La girouette",
+    "explanation": "La girouette",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #232"
   },
@@ -3306,7 +3306,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le baromètre",
     "option_d": "Le pluviomètre",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le baromètre",
+    "explanation": "Le baromètre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #233"
   },
@@ -3320,7 +3320,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le pluviomètre",
     "option_d": "L'anémomètre",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le pluviomètre",
+    "explanation": "Le pluviomètre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #234"
   },
@@ -3334,7 +3334,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La mer Rouge",
     "option_d": "La mer Méditerranée",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'océan Atlantique",
+    "explanation": "L'océan Atlantique",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #235"
   },
@@ -3348,7 +3348,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "2 pays",
     "option_d": "5 pays (Liberia, Guinée, Mali, Burkina Faso, Ghana)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 5 pays (Liberia, Guinée, Mali, Burkina Faso, Ghana)",
+    "explanation": "5 pays (Liberia, Guinée, Mali, Burkina Faso, Ghana)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #236"
   },
@@ -3362,7 +3362,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Ghana",
     "option_d": "Le Mali",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Ghana",
+    "explanation": "Le Ghana",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #237"
   },
@@ -3376,7 +3376,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Mali",
     "option_d": "Le Liberia",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le Liberia",
+    "explanation": "Le Liberia",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #238"
   },
@@ -3390,7 +3390,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Ghana et le Liberia",
     "option_d": "La Guinée seule",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le Mali et le Burkina Faso",
+    "explanation": "Le Mali et le Burkina Faso",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #239"
   },
@@ -3404,7 +3404,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'océan Arctique",
     "option_d": "L'océan Pacifique",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'océan Atlantique",
+    "explanation": "L'océan Atlantique",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Géographie #240"
   },
@@ -3418,7 +3418,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il est élu au suffrage universel direct",
     "option_d": "Il hérite du poste",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Il est élu au suffrage universel direct",
+    "explanation": "Il est élu au suffrage universel direct",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #241"
   },
@@ -3432,7 +3432,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il est nommé par le Président",
     "option_d": "Il hérite du poste",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Il est élu au suffrage universel direct",
+    "explanation": "Il est élu au suffrage universel direct",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #242"
   },
@@ -3446,7 +3446,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il est élu au suffrage universel direct",
     "option_d": "Il est nommé par le Président",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Il est élu au suffrage universel direct",
+    "explanation": "Il est élu au suffrage universel direct",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #243"
   },
@@ -3460,7 +3460,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il est nommé par le Président de la République",
     "option_d": "Il est élu au suffrage universel direct",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Il est élu par les députés (suffrage indirect)",
+    "explanation": "Il est élu par les députés (suffrage indirect)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #244"
   },
@@ -3474,7 +3474,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il est élu au suffrage universel direct",
     "option_d": "Il est élu par les députés",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Il est nommé par le Président de la République",
+    "explanation": "Il est nommé par le Président de la République",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #245"
   },
@@ -3488,7 +3488,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il est élu par les députés",
     "option_d": "Il est nommé",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Il est nommé",
+    "explanation": "Il est nommé",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #246"
   },
@@ -3502,7 +3502,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La suppression des élections locales",
     "option_d": "L'abolition des collectivités locales",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Un procédé qui accorde une liberté de gestion aux collectivités locales",
+    "explanation": "Un procédé qui accorde une liberté de gestion aux collectivités locales",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #247"
   },
@@ -3516,7 +3516,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un fonctionnaire de l'État",
     "option_d": "Un étranger résident",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un citoyen qui paie des impôts à l'État",
+    "explanation": "Un citoyen qui paie des impôts à l'État",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #248"
   },
@@ -3530,7 +3530,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le drapeau uniquement",
     "option_d": "Le drapeau, l'hymne national et la devise",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Le drapeau, l'hymne national et la devise",
+    "explanation": "Le drapeau, l'hymne national et la devise",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #249"
   },
@@ -3544,7 +3544,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Paix, Travail, Patrie",
     "option_d": "Union, Discipline, Travail",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Union, Discipline, Travail",
+    "explanation": "Union, Discipline, Travail",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #250"
   },
@@ -3558,7 +3558,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'Ivoirienne",
     "option_d": "L'Abidjanaise",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : L'Abidjanaise",
+    "explanation": "L'Abidjanaise",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #251"
   },
@@ -3572,7 +3572,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Toujours le deuil",
     "option_d": "Elle peut symboliser l'espoir ou la gaieté selon le contexte",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Elle peut symboliser l'espoir ou la gaieté selon le contexte",
+    "explanation": "Elle peut symboliser l'espoir ou la gaieté selon le contexte",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #252"
   },
@@ -3586,7 +3586,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La dignité",
     "option_d": "La sagesse",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La violence ou le danger",
+    "explanation": "La violence ou le danger",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #253"
   },
@@ -3600,7 +3600,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le danger",
     "option_d": "La violence",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La dignité",
+    "explanation": "La dignité",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #254"
   },
@@ -3614,7 +3614,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La CEDEAO",
     "option_d": "L'UNICEF",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : L'UNICEF",
+    "explanation": "L'UNICEF",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #255"
   },
@@ -3628,7 +3628,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Fonds International pour l'Éducation",
     "option_d": "Fonds des Nations Unies pour l'Enfance",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Fonds des Nations Unies pour l'Enfance",
+    "explanation": "Fonds des Nations Unies pour l'Enfance",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #256"
   },
@@ -3642,7 +3642,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Organisation des Ministères de la Santé",
     "option_d": "Organisation Mondiale de la Santé",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Organisation Mondiale de la Santé",
+    "explanation": "Organisation Mondiale de la Santé",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #257"
   },
@@ -3656,7 +3656,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Union des Écoles et Collèges",
     "option_d": "Organisation des Nations Unies pour l'Éducation, la Science et la Culture",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Organisation des Nations Unies pour l'Éducation, la Science et la Culture",
+    "explanation": "Organisation des Nations Unies pour l'Éducation, la Science et la Culture",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #258"
   },
@@ -3670,7 +3670,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Aucun droit spécifique",
     "option_d": "Uniquement le droit de vote",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le droit à la santé, à l'éducation, à un nom et une nationalité",
+    "explanation": "Le droit à la santé, à l'éducation, à un nom et une nationalité",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #259"
   },
@@ -3684,7 +3684,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Aucun congé n'existe",
     "option_d": "Le congé annuel",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le congé maladie",
+    "explanation": "Le congé maladie",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #260"
   },
@@ -3698,7 +3698,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Il n'existe pas de classification",
     "option_d": "Oui, systématiquement",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Non, ce n'est pas un congé administratif classique",
+    "explanation": "Non, ce n'est pas un congé administratif classique",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #261"
   },
@@ -3712,7 +3712,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une couleur primaire pure",
     "option_d": "Une couleur uniquement noire",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Une couleur obtenue par le mélange de deux couleurs primaires",
+    "explanation": "Une couleur obtenue par le mélange de deux couleurs primaires",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #262"
   },
@@ -3726,7 +3726,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les reins, le foie, les poumons et la peau",
     "option_d": "Les os uniquement",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Les reins, le foie, les poumons et la peau",
+    "explanation": "Les reins, le foie, les poumons et la peau",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #263"
   },
@@ -3740,7 +3740,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le groupe O",
     "option_d": "Le groupe B",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le groupe O",
+    "explanation": "Le groupe O",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #264"
   },
@@ -3754,7 +3754,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le groupe A",
     "option_d": "Le groupe B",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Le groupe AB",
+    "explanation": "Le groupe AB",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #265"
   },
@@ -3768,7 +3768,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une maladie bactérienne",
     "option_d": "Une maladie génétique",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Une maladie parasitaire transmise par le moustique anophèle",
+    "explanation": "Une maladie parasitaire transmise par le moustique anophèle",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #266"
   },
@@ -3782,7 +3782,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le Plasmodium (parasite)",
     "option_d": "Un champignon",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le Plasmodium (parasite)",
+    "explanation": "Le Plasmodium (parasite)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #267"
   },
@@ -3796,7 +3796,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un parasite",
     "option_d": "Un virus (VIH)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un virus (VIH)",
+    "explanation": "Un virus (VIH)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #268"
   },
@@ -3810,7 +3810,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Aucun moyen n'existe",
     "option_d": "Uniquement la vaccination",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'abstinence, la fidélité, l'utilisation du préservatif",
+    "explanation": "L'abstinence, la fidélité, l'utilisation du préservatif",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #269"
   },
@@ -3824,7 +3824,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Virale",
     "option_d": "Parasitaire",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Bactérienne",
+    "explanation": "Bactérienne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #270"
   },
@@ -3838,7 +3838,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Virale",
     "option_d": "Bactérienne",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Bactérienne",
+    "explanation": "Bactérienne",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #271"
   },
@@ -3852,7 +3852,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Parasitaire",
     "option_d": "Virale",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Virale",
+    "explanation": "Virale",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #272"
   },
@@ -3866,7 +3866,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les reins",
     "option_d": "Le foie",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le pancréas",
+    "explanation": "Le pancréas",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #273"
   },
@@ -3880,7 +3880,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les poumons",
     "option_d": "Le foie",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Les reins",
+    "explanation": "Les reins",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #274"
   },
@@ -3894,7 +3894,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Produire les globules rouges uniquement",
     "option_d": "Assurer les échanges gazeux (respiration)",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Assurer les échanges gazeux (respiration)",
+    "explanation": "Assurer les échanges gazeux (respiration)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #275"
   },
@@ -3908,7 +3908,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Couper les aliments",
     "option_d": "Digérer les aliments",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Couper les aliments",
+    "explanation": "Couper les aliments",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #276"
   },
@@ -3922,7 +3922,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Déchirer les aliments",
     "option_d": "Couper les aliments",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Déchirer les aliments",
+    "explanation": "Déchirer les aliments",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #277"
   },
@@ -3936,7 +3936,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Déchirer les aliments",
     "option_d": "Couper les aliments",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Broyer les aliments",
+    "explanation": "Broyer les aliments",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #278"
   },
@@ -3950,7 +3950,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le processus par lequel les plantes vertes fabriquent leur matière organique grâce à la lumière",
     "option_d": "La reproduction des plantes",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Le processus par lequel les plantes vertes fabriquent leur matière organique grâce à la lumière",
+    "explanation": "Le processus par lequel les plantes vertes fabriquent leur matière organique grâce à la lumière",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #279"
   },
@@ -3964,7 +3964,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une plante capable de fabriquer sa propre matière organique",
     "option_d": "Une plante qui se nourrit d'autres plantes",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Une plante capable de fabriquer sa propre matière organique",
+    "explanation": "Une plante capable de fabriquer sa propre matière organique",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #280"
   },
@@ -3978,7 +3978,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Une plante qui fabrique elle-même sa matière organique",
     "option_d": "Une plante qui utilise la matière organique d'autres organismes",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Une plante qui utilise la matière organique d'autres organismes",
+    "explanation": "Une plante qui utilise la matière organique d'autres organismes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #281"
   },
@@ -3992,7 +3992,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "La dilution et la concentration",
     "option_d": "La fusion et la solidification",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : L'évaporation et l'ébullition",
+    "explanation": "L'évaporation et l'ébullition",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #282"
   },
@@ -4006,7 +4006,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "212°C (en Fahrenheit uniquement)",
     "option_d": "100°C",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 100°C",
+    "explanation": "100°C",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #283"
   },
@@ -4020,7 +4020,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "100°C",
     "option_d": "0°C",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : 0°C",
+    "explanation": "0°C",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #284"
   },
@@ -4034,7 +4034,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un type de roche",
     "option_d": "Une seule espèce animale",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Un ensemble formé par un milieu et les êtres vivants qui y interagissent",
+    "explanation": "Un ensemble formé par un milieu et les êtres vivants qui y interagissent",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #285"
   },
@@ -4048,7 +4048,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Pomper le sang dans tout l'organisme",
     "option_d": "Digérer les aliments",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Pomper le sang dans tout l'organisme",
+    "explanation": "Pomper le sang dans tout l'organisme",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #286"
   },
@@ -4062,7 +4062,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un spray nasal uniquement",
     "option_d": "Une pommade cutanée",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La voie orale (gouttes)",
+    "explanation": "La voie orale (gouttes)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #287"
   },
@@ -4076,7 +4076,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'oxygène pur",
     "option_d": "L'hydrogène",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Le dioxyde de carbone (CO2)",
+    "explanation": "Le dioxyde de carbone (CO2)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #288"
   },
@@ -4090,7 +4090,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'azote uniquement",
     "option_d": "Le dioxyde de carbone",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : L'oxygène",
+    "explanation": "L'oxygène",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #289"
   },
@@ -4104,7 +4104,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "L'azote (environ 78%)",
     "option_d": "L'hydrogène",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : L'azote (environ 78%)",
+    "explanation": "L'azote (environ 78%)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #290"
   },
@@ -4118,7 +4118,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le foie",
     "option_d": "Le pancréas",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Les glandes salivaires",
+    "explanation": "Les glandes salivaires",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #291"
   },
@@ -4132,7 +4132,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Produire la bile qui aide à digérer les graisses",
     "option_d": "Pomper le sang",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Produire la bile qui aide à digérer les graisses",
+    "explanation": "Produire la bile qui aide à digérer les graisses",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #292"
   },
@@ -4146,7 +4146,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un animal aquatique uniquement",
     "option_d": "Un animal dont la température corporelle dépend du milieu extérieur",
     "correct_answer": "D",
-    "explanation": "Bonne réponse : Un animal dont la température corporelle dépend du milieu extérieur",
+    "explanation": "Un animal dont la température corporelle dépend du milieu extérieur",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #293"
   },
@@ -4160,7 +4160,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un animal qui vole",
     "option_d": "Un animal qui ne se reproduit pas",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Un animal capable de vivre à la fois dans l'eau et sur la terre",
+    "explanation": "Un animal capable de vivre à la fois dans l'eau et sur la terre",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #294"
   },
@@ -4174,7 +4174,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Le serpent",
     "option_d": "Le lézard",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : La grenouille",
+    "explanation": "La grenouille",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #295"
   },
@@ -4188,7 +4188,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Oui",
     "option_d": "Non, à sang chaud",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Oui",
+    "explanation": "Oui",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #296"
   },
@@ -4202,7 +4202,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Un animal à quatre pattes uniquement",
     "option_d": "Tout petit animal quel qu'il soit",
     "correct_answer": "A",
-    "explanation": "Bonne réponse : Un animal invertébré à six pattes, généralement avec des antennes",
+    "explanation": "Un animal invertébré à six pattes, généralement avec des antennes",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #297"
   },
@@ -4216,7 +4216,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Non, c'est un arachnide",
     "option_d": "Non, c'est un mollusque",
     "correct_answer": "B",
-    "explanation": "Bonne réponse : Oui",
+    "explanation": "Oui",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #298"
   },
@@ -4230,7 +4230,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Non, c'est un arachnide (huit pattes)",
     "option_d": "Non, c'est un mollusque",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Non, c'est un arachnide (huit pattes)",
+    "explanation": "Non, c'est un arachnide (huit pattes)",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #299"
   },
@@ -4244,7 +4244,7 @@ export function getSeedCafopCultureGenerale(): { resource: Resource; topics: Top
     "option_c": "Les crustacés",
     "option_d": "Les arachnides",
     "correct_answer": "C",
-    "explanation": "Bonne réponse : Les crustacés",
+    "explanation": "Les crustacés",
     "difficulty": "facile",
     "source_reference": "CAFOP Culture Générale — Institutions, vie civique et sciences générales #300"
   }
