@@ -12,6 +12,15 @@ const CARD_COLORS = [
   { border: 'border-emerald-400', bg: 'bg-emerald-50/60' },
 ]
 
+// Fonds pleins et nettement distincts pour les boutons de concours (premier niveau de choix).
+const GROUP_COLORS = [
+  'bg-blue-600',
+  'bg-violet-600',
+  'bg-teal-600',
+  'bg-amber-600',
+  'bg-rose-600',
+]
+
 const CONCOURS_GROUPS = ['CAFOP', 'INFAS', 'Fonction publique'] as const
 const OTHER_GROUP = 'Autres'
 
@@ -56,7 +65,7 @@ export default function QcmMenu() {
 
         <div className="space-y-3">
           {groupNames.map((name, index) => {
-            const color = CARD_COLORS[index % CARD_COLORS.length]
+            const bg = GROUP_COLORS[index % GROUP_COLORS.length]
             const groupResources = resources?.filter((r) => groupOf(r) === name) ?? []
             const totalQuestions = groupResources.reduce((sum, r) => sum + r.questionCount, 0)
             return (
@@ -64,10 +73,10 @@ export default function QcmMenu() {
                 key={name}
                 type="button"
                 onClick={() => setSelectedGroup(name)}
-                className={`block w-full rounded-xl border-l-4 p-4 text-left shadow-sm ${color.border} ${color.bg}`}
+                className={`block w-full rounded-xl p-4 text-left text-white shadow-sm ${bg}`}
               >
-                <p className="font-medium text-gray-900">{name}</p>
-                <p className="mt-2 text-xs text-gray-500">
+                <p className="font-medium">{name}</p>
+                <p className="mt-2 text-xs text-white/80">
                   {groupResources.length} sujet{groupResources.length !== 1 ? 's' : ''} · {totalQuestions} question
                   {totalQuestions !== 1 ? 's' : ''} au total
                 </p>
